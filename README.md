@@ -1,6 +1,6 @@
 <img src="preview/git.png">
 
-### [Snoo](https://snookee.vercel.app/) - Tailwind template.
+### [Snoo](https://snookee.vercel.app/) - tailwind template.
 
 - Tailwind CSS v4
 - HTML5, CSS3
@@ -8,5 +8,4 @@
 - Local Google Fonts
 - Google maps
 - Fully responsive layout
-- Vite config file
-- Simple use Tailwind via CLI
+
