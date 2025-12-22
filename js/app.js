@@ -1,7 +1,3 @@
-// Loader Hide
-setTimeout(function () {
-	document.querySelector(".loader").style.display = "none";
-  }, 200);
 
 // ScrollReveall
 window.sr = ScrollReveal();sr.reveal('.reveal');

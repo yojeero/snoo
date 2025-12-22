@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
-<html
-  lang="en">
+<html lang="en">
 
 <head>
 
@@ -17,378 +16,393 @@
 
     <link rel="icon" type="image/svg+xml" href="./images/fav.svg">
 
-   	<!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
-
     <!-- CSS  -->
-  <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
 </head>
 
-<body> 
+<body>
 
     <!--================= loader ================-->
 
-  <div class="absolute top-0 bottom-0 left-0 right-0 z-50 flex items-center justify-center m-auto bg-white loader">
-    
+    <div class="absolute top-0 bottom-0 left-0 right-0 z-50 flex items-center justify-center m-auto bg-white loader">
+
         <div class="w-12 h-12 border-4 border-solid rounded-full animate-spin border-red-500 border-t-transparent">
         </div>
-    
+
     </div>
 
     <!--================= main ================-->
 
     <main class="w-full mx-auto">
 
-            <!--================= top menu ================-->
+        <!--================= top menu ================-->
 
-            <header class="w-full py-3 border-b-1 border-solid border-gray-100">
+        <header class="w-full py-3 border-b border-solid border-gray-100">
 
-                <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                    <div class="flex items-center justify-between">
+            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between">
 
-                        <div class="flex flex-row items-center flex-shrink-0">
+                    <div class="flex flex-row items-center shrink-0">
 
-                                <svg class="w-9 h-9 text-red-500" viewBox="0 0 24 24">
-                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                        d="M6.266 2h11.468c.66 0 1.756.098 2.128 1.152c.222.628.135 1.333.376 1.953c.253.652.65 1.281 1.036 1.849c.382.562.822 1.17.707 1.84c-.13.756-.735 1.467-1.536 1.845c-1.64.774-4.064.308-4.45-2.493c-.323.894-1.315 2.8-4.034 2.8c-2.72 0-3.633-1.906-3.956-2.8c-.386 2.8-2.81 3.267-4.45 2.493c-.8-.378-1.407-1.09-1.536-1.845c-.115-.67.325-1.278.707-1.84c.385-.568.783-1.197 1.036-1.849c.242-.62.154-1.325.376-1.953C4.51 2.098 5.605 2 6.266 2m10.697 18.665v-5.342m1.563 0v-1.336m0 8.013v-1.335m-1.563-2.671h3.126m0 0c.518 0 .938.448.938 1.001v.668c0 .553-.42 1.002-.938 1.002h-4.064m4.064-2.671c.518 0 .938-.449.938-1.002v-.668c0-.553-.42-1.001-.938-1.001h-4.064M3.02 10.481v4.508c0 2.832 0 4.249.879 5.129c.88.88 2.294.88 5.123.88h4.002"
-                                        color="currentColor" />
+                        <svg class="w-9 h-9 text-red-500" viewBox="0 0 24 24">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5"
+                                d="M6.266 2h11.468c.66 0 1.756.098 2.128 1.152c.222.628.135 1.333.376 1.953c.253.652.65 1.281 1.036 1.849c.382.562.822 1.17.707 1.84c-.13.756-.735 1.467-1.536 1.845c-1.64.774-4.064.308-4.45-2.493c-.323.894-1.315 2.8-4.034 2.8c-2.72 0-3.633-1.906-3.956-2.8c-.386 2.8-2.81 3.267-4.45 2.493c-.8-.378-1.407-1.09-1.536-1.845c-.115-.67.325-1.278.707-1.84c.385-.568.783-1.197 1.036-1.849c.242-.62.154-1.325.376-1.953C4.51 2.098 5.605 2 6.266 2m10.697 18.665v-5.342m1.563 0v-1.336m0 8.013v-1.335m-1.563-2.671h3.126m0 0c.518 0 .938.448.938 1.001v.668c0 .553-.42 1.002-.938 1.002h-4.064m4.064-2.671c.518 0 .938-.449.938-1.002v-.668c0-.553-.42-1.001-.938-1.001h-4.064M3.02 10.481v4.508c0 2.832 0 4.249.879 5.129c.88.88 2.294.88 5.123.88h4.002"
+                                color="currentColor" />
+                        </svg>
+
+                        <a href="https://snoo.vercel.app/" target="_blank" class="px-1 text-xl font-bold text-red-500">
+
+                            CryptoSnoo
+                        </a>
+
+                    </div>
+
+                    <div class="hidden lg:ml-16 lg:flex lg:items-center lg:justify-center lg:space-x-10 uppercase">
+
+                        <div class="flex items-center space-x-10">
+
+                            <!-- phone top -->
+                            <p class="flex items-center px-2 text-sm">
+
+                                <svg class="w-5 h-5 m-2 text-gray-800" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                                 </svg>
-        
-                            <a href="https://snoo.vercel.app/" target="_blank" class="px-1 text-xl font-bold text-red-500">
 
-                                CryptoSnoo
-                            </a> 
+                                +0 111 222 33 44
+                            </p>
 
-                        </div>       
-        
-                        <div class="hidden lg:ml-16 lg:flex lg:items-center lg:justify-center lg:space-x-10 uppercase">
-
-                            <div class="flex items-center space-x-10">
-
-                                      <!-- phone top -->
-                                <p class="flex items-center px-2 text-sm">
-
-                                    <svg class="w-5 h-5 m-2 text-gray-800" viewBox="0 0 24 24" fill="none"
-                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path
-                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                                    </svg>
-
-                                    +0 111 222 33 44
-                                </p>                                           
-
-                                    <!-- name top -->        
-                                <a class="flex items-center px-2 hover:text-red-500 text-xs"
+                            <!-- name top -->
+                            <a class="flex items-center px-2 hover:text-red-500 text-xs"
                                 href="https://wa.me/01112223344?text=I%20look%20yours%20help" target="_blank">
 
                                 <svg class="w-5 h-5 m-2 text-gray-800" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
                                     <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
                                     <path d="M8 10h.01" />
                                     <path d="M12 10h.01" />
                                     <path d="M16 10h.01" />
-                                </svg>         
+                                </svg>
 
                                 snoo chat
-                                </a>
+                            </a>
 
-                            </div>                      
+                        </div>
 
-                    <!-- visiters counter -->
-					<div class="flex items-center px-2">
+                        <!-- visiters counter -->
+                        <div class="flex items-center px-2">
 
-                        <svg class="w-6 h-6 mr-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
-                            <polyline points="16 7 22 7 22 13" />
+                            <svg class="w-6 h-6 mr-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+                                <polyline points="16 7 22 7 22 13" />
+                            </svg>
+
+                            <div class="w-50 text-xs"><span class="counter-value" data-target="1532">420</span>
+                                visited</div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- navigation -->
+
+                    <!-- open button -->
+                    <button id="menu" class="flex cursor-pointer" onclick="openNav()">
+
+                        <svg class="flex h-9 w-9 cursor-pointer bg-transparent pr-4 text-black" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <line x1="4" x2="20" y1="12" y2="12" />
+                            <line x1="4" x2="20" y1="6" y2="6" />
+                            <line x1="4" x2="20" y1="18" y2="18" />
                         </svg>
 
-					<div class="w-[200px] text-xs"><span class="counter-value" data-target="1532">420</span> visited</div>						
-					
-					</div>
+                    </button>
 
-            </div>
+                    <!-- close button -->
+                    <button id="close-nav" onclick="closeNav()">
 
-            <!-- navigation -->			
+                        <svg class="absolute z-50 top-8 right-16 w-6 h-6 cursor-pointer text-black" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M7 7h10v10" />
+                            <path d="M7 17 17 7" />
+                        </svg>
 
-				<!-- open button -->				
-				<button id="menu" class="flex cursor-pointer" onclick="openNav()">			
+                    </button>
 
-                    <svg class="flex h-9 w-9 cursor-pointer bg-transparent pr-4 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="4" x2="20" y1="12" y2="12" />
-                        <line x1="4" x2="20" y1="6" y2="6" />
-                        <line x1="4" x2="20" y1="18" y2="18" />
-                    </svg>
-				
-				</button>	
+                    <!-- nav content-->
+                    <div id="nav-content"
+                        class="fixed z-40 top-0 right-0 h-full w-full overflow-hidden bg-white shadow-lg transition-all duration-300">
 
-				<!-- close button -->				
-				<button id="close-nav" onclick="closeNav()">
-
-                    <svg class="absolute z-50 top-8 right-16 w-6 h-6 cursor-pointer text-black" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M7 7h10v10" />
-                        <path d="M7 17 17 7" />
-                    </svg>
-
-				</button>
-
-				<!-- nav content-->
-				<div id="nav-content"
-					class="fixed z-40 top-0 right-0 h-full w-full overflow-hidden bg-white shadow-lg transition-all duration-300">
-		
-					<ul class="nav h-full w-full lg:ml-16 ml-8  
+                        <ul class="nav h-full w-full lg:ml-16 ml-8  
 					grid auto-cols-max content-center justify-start transition duration-500">
 
-					<li class="text-2xl font-bold text-red-500 pb-16">CryptoSnoo &reg;</li>
+                            <li class="text-2xl font-bold text-red-500 pb-16">CryptoSnoo &reg;</li>
 
-					<li><a href="#">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#service">Services</a></li>    
-					<li><a href="#news">News</a></li>  
-					<li><a href="#contact">Contact</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#service">Services</a></li>
+                            <li><a href="#news">News</a></li>
+                            <li><a href="#contact">Contact</a></li>
 
-					<li class="flex pt-20">Copyright &copy; CryptoSnoo</li>
+                            <li class="flex pt-20">Copyright &copy; CryptoSnoo</li>
 
-					</ul>			
+                        </ul>
 
-				</div>	                    
-                        
                     </div>
+
                 </div>
+            </div>
 
-            </header>
+        </header>
 
-            <!--================= head top ================-->  
+        <!--================= head top ================-->
 
-            <section class="h-[575px] w-full top-bg">
+        <section class="h-143.75 w-full top-bg">
 
-                <div class="flex px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="flex px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
 
-                    <div class="flex w-full lg:w-1/2 h-[475px] p-4 items-center">         
+                <div class="flex w-full lg:w-1/2 h-118.75 p-4 items-center">
 
-                        <div class="w-full text-center lg:text-left">
+                    <div class="w-full text-center lg:text-left">
 
-                            <div class="max-w-sm mx-auto sm:max-w-md md:max-w-full">                              
-                                                            
+                        <div class="max-w-sm mx-auto sm:max-w-md md:max-w-full">
+
                             <h1 class="text-6xl capitalize">
                                 Snoo
                             </h1>
-                            
+
                             <h2 class="col-start-1 col-end-2 text-4xl ml-2">
                                 crypto exchange
-                            </h2>                
-        
+                            </h2>
+
                             <div class="mt-6 ml-2 lg:mt-14 lg:flex lg:items-center">
 
-                                <div class="flex justify-center flex-shrink-0 -space-x-4 overflow-hidden lg:justify-start">
+                                <div class="flex justify-center shrink-0 -space-x-4 overflow-hidden lg:justify-start">
 
-                                    <img class="inline-block rounded-full w-14 h-14 ring-2 ring-white" src="./images/k-1.webp" alt="" />
+                                    <img class="inline-block rounded-full w-14 h-14 ring-2 ring-white"
+                                        src="./images/k-1.webp" alt="" />
 
-                                    <img class="inline-block rounded-full w-14 h-14 ring-2 ring-white" src="./images/k-2.webp" alt="" />
+                                    <img class="inline-block rounded-full w-14 h-14 ring-2 ring-white"
+                                        src="./images/k-2.webp" alt="" />
 
-                                    <img class="inline-block rounded-full w-14 h-14 ring-2 ring-white" src="./images/k-3.webp" alt="" />
+                                    <img class="inline-block rounded-full w-14 h-14 ring-2 ring-white"
+                                        src="./images/k-3.webp" alt="" />
 
                                 </div>
-    
-                                <p class="mt-4 text-md lg:mt-0 lg:ml-4">Join more than <span class="font-bold">45860+ clients</span>, satisfied with the result of our work.</p>
+
+                                <p class="mt-4 text-md lg:mt-0 lg:ml-4">Join more than <span class="font-bold">45860+
+                                        clients</span>, satisfied with the result of our work.</p>
 
                             </div>
 
                         </div>
-    
+
                         <div class="flex items-center justify-center lg:justify-start space-x-3 mt-8">
 
-                        <a
-                        href="https://wa.me/01112223344?text=I%20look%20yours%20help" target="_blank"
-                            title=""
-                            class="inline-flex items-center justify-center px-8 py-3 text-sm font-medium text-white transition-all duration-200 rounded-sm cursor-pointer bg-red-500 hover:shadow-2xl">
+                            <a href="https://wa.me/01112223344?text=I%20look%20yours%20help" target="_blank" title=""
+                                class="inline-flex items-center justify-center px-8 py-3 text-sm font-medium text-white transition-all duration-200 rounded-sm cursor-pointer bg-red-500 hover:shadow-2xl">
 
-                            chat
+                                chat
 
-                            <svg class="w-6 h-6 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M8 9h8" />
-                                <path d="M8 13h6" />
-                                <path d="M9 18h-3a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-3l-3 3l-3 -3z" />
-                            </svg>
+                                <svg class="w-6 h-6 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M8 9h8" />
+                                    <path d="M8 13h6" />
+                                    <path
+                                        d="M9 18h-3a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-3l-3 3l-3 -3z" />
+                                </svg>
 
-                        </a>
+                            </a>
 
-                        <!-- social top -->
-                        <p                               
-                        class="flex items-center ml-4 py-4 text-lg font-bold cursor-pointer">    
-                        
-                        open
+                            <!-- social top -->
+                            <p class="flex items-center ml-4 py-4 text-lg font-bold cursor-pointer">
 
-                        <svg class="w-6 h-6 mx-2 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M5 12h.5m3 0h1.5m3 0h6" />
-                                <path d="M15 16l4 -4" />
-                                <path d="M15 8l4 4" />
-                            </svg>
+                                open
 
-                        </p>
+                                <svg class="w-6 h-6 mx-2 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M5 12h.5m3 0h1.5m3 0h6" />
+                                    <path d="M15 16l4 -4" />
+                                    <path d="M15 8l4 4" />
+                                </svg>
+
+                            </p>
 
                             <!-- facebook -->
-                        <a href="https://facebook.com/" target="_blank">
-                        
-                        <svg class="w-6 h-6 text-slate-500 hover:text-red-500" viewBox="0 0 24 24">
-                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                color="currentColor">
-                                <path
-                                    d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12" />
-                                <path d="M16.927 8.026h-2.945a1.9 1.9 0 0 0-1.9 1.886l-.086 11.515m-1.914-7.425h4.803" />
-                            </g>
-                        </svg>
-                        
-                        </a>
+                            <a href="https://facebook.com/" target="_blank">
 
-                       <!-- twitter -->
-                    <a href="https://x.com/" target="_blank">
-                    
-                        <svg class="w-6 h-6 text-slate-500 hover:text-red-500" viewBox="0 0 24 24">
-                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                color="currentColor">
-                                <path
-                                    d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12.001 2.5c4.478 0 6.717 0 8.108 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.717 0-8.109-1.391c-1.39-1.392-1.39-3.63-1.39-8.109" />
-                                <path d="m7 17l4.194-4.193M17 7l-4.193 4.194m0 0L9.777 7H7l4.194 5.807m1.613-1.614L17 17h-2.778l-3.028-4.193" />
-                            </g>
-                        </svg>
-                    
-                    </a>
+                                <svg class="w-6 h-6 text-slate-500 hover:text-red-500" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5" color="currentColor">
+                                        <path
+                                            d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12" />
+                                        <path
+                                            d="M16.927 8.026h-2.945a1.9 1.9 0 0 0-1.9 1.886l-.086 11.515m-1.914-7.425h4.803" />
+                                    </g>
+                                </svg>
 
-                    <!-- instagram -->
-                    <a href="https://instagram.com/" target="_blank">
+                            </a>
 
-                        <svg class="w-6 h-6 text-slate-500 hover:text-red-500" viewBox="0 0 24 24">
-                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                color="currentColor">
-                                <path
-                                    d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12" />
-                                <path d="M16.5 12a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m1.008-5.5h-.01" />
-                            </g>
-                        </svg>
+                            <!-- twitter -->
+                            <a href="https://x.com/" target="_blank">
 
-                    </a>       
-                             
-                            </div>
-                        </div>                        
+                                <svg class="w-6 h-6 text-slate-500 hover:text-red-500" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5" color="currentColor">
+                                        <path
+                                            d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12.001 2.5c4.478 0 6.717 0 8.108 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.717 0-8.109-1.391c-1.39-1.392-1.39-3.63-1.39-8.109" />
+                                        <path
+                                            d="m7 17l4.194-4.193M17 7l-4.193 4.194m0 0L9.777 7H7l4.194 5.807m1.613-1.614L17 17h-2.778l-3.028-4.193" />
+                                    </g>
+                                </svg>
+
+                            </a>
+
+                            <!-- instagram -->
+                            <a href="https://instagram.com/" target="_blank">
+
+                                <svg class="w-6 h-6 text-slate-500 hover:text-red-500" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5" color="currentColor">
+                                        <path
+                                            d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12" />
+                                        <path d="M16.5 12a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m1.008-5.5h-.01" />
+                                    </g>
+                                </svg>
+
+                            </a>
+
+                        </div>
+                    </div>
 
 
-                    </div>              
-                
-            <!-- head image -->
-            <div class="hidden lg:flex w-full scale-90 lg:w-1/2 h-[475px] object-cover mt-[80px]">
-            
-                <img class="rounded-bl-[56px]" src="./images/top.webp" alt="">
-            
-            </div>        
-        
-        </div>
+                </div>
 
-            </section>
+                <!-- head image -->
+                <div class="hidden lg:flex w-full scale-90 lg:w-1/2 h-118.75 object-cover mt-20">
 
-              <!--================= equipment ================-->
+                    <img class="rounded-bl-[56px]" src="./images/top.webp" alt="">
 
-            <section class="reveal flex w-full flex-row flex-wrap items-center justify-center gap-12 lg:mt-30 lg:mb-20 my-12">
+                </div>
 
-                <img class="h-[50px] object-cover" src="./images/scout.svg" alt="" />
-            
-                <img class="h-[50px] object-cover" src="./images/cos.svg" alt="" />
-            
-                <img class="h-[50px] object-cover" src="./images/netflix.svg" alt="" />
-            
-                <img class="h-[50px] object-cover" src="./images/enigma.svg" alt="" />
-            
-                <img class="h-[50px] object-cover" src="./images/expel.svg" alt="" />    
-            
-            </section>
+            </div>
+
+        </section>
+
+        <!--================= equipment ================-->
+
+        <section
+            class="reveal flex w-full flex-row flex-wrap items-center justify-center gap-12 lg:mt-30 lg:mb-20 my-12">
+
+            <img class="h-12.5 object-cover" src="./images/scout.svg" alt="" />
+
+            <img class="h-12.5 object-cover" src="./images/cos.svg" alt="" />
+
+            <img class="h-12.5 object-cover" src="./images/netflix.svg" alt="" />
+
+            <img class="h-12.5 object-cover" src="./images/enigma.svg" alt="" />
+
+            <img class="h-12.5 object-cover" src="./images/expel.svg" alt="" />
+
+        </section>
 
         <!--================= about ================-->
 
         <section class="reveal pt-16 bg-[#e9f3fa]" id="about">
 
-        <div class="w-full mx-auto max-w-7xl">
+            <div class="w-full mx-auto max-w-7xl">
 
-            <!-- about 1 -->
-            <div class="mx-auto overflow-hidden grid columns-1 lg:grid-cols-2">
-             
-                    <img class="grid w-full place-content-center scale-90" src="./images/app_1.webp" alt="" />   
+                <!-- about 1 -->
+                <div class="mx-auto overflow-hidden grid columns-1 lg:grid-cols-2">
 
-                <div class="flex flex-col h-full p-4 lg:p-16 justify-center">
+                    <img class="grid w-full place-content-center scale-90" src="./images/app_1.webp" alt="" />
 
-                <svg class="w-12 h-12 text-red-600 ml-6" viewBox="0 0 24 24">
-                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                        d="M6.266 2h11.468c.66 0 1.756.098 2.128 1.152c.222.628.135 1.333.376 1.953c.253.652.65 1.281 1.036 1.849c.382.562.822 1.17.707 1.84c-.13.756-.735 1.467-1.536 1.845c-1.64.774-4.064.308-4.45-2.493c-.323.894-1.315 2.8-4.034 2.8c-2.72 0-3.633-1.906-3.956-2.8c-.386 2.8-2.81 3.267-4.45 2.493c-.8-.378-1.407-1.09-1.536-1.845c-.115-.67.325-1.278.707-1.84c.385-.568.783-1.197 1.036-1.849c.242-.62.154-1.325.376-1.953C4.51 2.098 5.605 2 6.266 2m10.697 18.665v-5.342m1.563 0v-1.336m0 8.013v-1.335m-1.563-2.671h3.126m0 0c.518 0 .938.448.938 1.001v.668c0 .553-.42 1.002-.938 1.002h-4.064m4.064-2.671c.518 0 .938-.449.938-1.002v-.668c0-.553-.42-1.001-.938-1.001h-4.064M3.02 10.481v4.508c0 2.832 0 4.249.879 5.129c.88.88 2.294.88 5.123.88h4.002"
-                        color="currentColor" />
-                </svg>
+                    <div class="flex flex-col h-full p-4 lg:p-16 justify-center">
 
-                <h2 class="px-4 text-4xl font-bold my-4">                 
-                             SnooBank
-                </h2> 
+                        <svg class="w-12 h-12 text-red-600 ml-6" viewBox="0 0 24 24">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5"
+                                d="M6.266 2h11.468c.66 0 1.756.098 2.128 1.152c.222.628.135 1.333.376 1.953c.253.652.65 1.281 1.036 1.849c.382.562.822 1.17.707 1.84c-.13.756-.735 1.467-1.536 1.845c-1.64.774-4.064.308-4.45-2.493c-.323.894-1.315 2.8-4.034 2.8c-2.72 0-3.633-1.906-3.956-2.8c-.386 2.8-2.81 3.267-4.45 2.493c-.8-.378-1.407-1.09-1.536-1.845c-.115-.67.325-1.278.707-1.84c.385-.568.783-1.197 1.036-1.849c.242-.62.154-1.325.376-1.953C4.51 2.098 5.605 2 6.266 2m10.697 18.665v-5.342m1.563 0v-1.336m0 8.013v-1.335m-1.563-2.671h3.126m0 0c.518 0 .938.448.938 1.001v.668c0 .553-.42 1.002-.938 1.002h-4.064m4.064-2.671c.518 0 .938-.449.938-1.002v-.668c0-.553-.42-1.001-.938-1.001h-4.064M3.02 10.481v4.508c0 2.832 0 4.249.879 5.129c.88.88 2.294.88 5.123.88h4.002"
+                                color="currentColor" />
+                        </svg>
 
-                <p class="px-4 text-md">                 
-                    Cupidatat esse magna magna quis aute nisi. Laborum deserunt nulla ad voluptate qui sit ullamco nostrud exercitation ex labore. Ullamco laborum do qui non eu cillum aliqua.
-                </p> 
+                        <h2 class="px-4 text-4xl font-bold my-4">
+                            SnooBank
+                        </h2>
 
-                <p class="mt-4 px-4 text-md">                 
-                    Amet culpa duis pariatur anim laboris nisi cillum sunt duis pariatur aliquip veniam aliquip aliquip. Esse cillum ea aute exercitation cupidatat eu cillum qui velit.
-                </p> 
+                        <p class="px-4 text-md">
+                            Cupidatat esse magna magna quis aute nisi. Laborum deserunt nulla ad voluptate qui sit
+                            ullamco nostrud exercitation ex labore. Ullamco laborum do qui non eu cillum aliqua.
+                        </p>
 
-                <p class="mt-4 px-4 text-md">                 
-                    Incididunt irure eu incididunt dolor consequat velit commodo sint enim aute officia deserunt non mollit. Nulla mollit magna sit ex sunt reprehenderit velit incididunt  Ullamco veniam et ut eu esse ex culpa et exercitation anim..
-                </p> 
-            
-            </div>    
-               
-            </div>
+                        <p class="mt-4 px-4 text-md">
+                            Amet culpa duis pariatur anim laboris nisi cillum sunt duis pariatur aliquip veniam aliquip
+                            aliquip. Esse cillum ea aute exercitation cupidatat eu cillum qui velit.
+                        </p>
 
-                <!-- about 2 -->
-                <div class="mx-auto overflow-hidden grid columns-1 lg:grid-cols-2">             
-                  
-                <div class="flex flex-col h-full p-4 lg:p-16 justify-center ml-0 lg:ml-24">
+                        <p class="mt-4 px-4 text-md">
+                            Incididunt irure eu incididunt dolor consequat velit commodo sint enim aute officia deserunt
+                            non mollit. Nulla mollit magna sit ex sunt reprehenderit velit incididunt Ullamco veniam et
+                            ut eu esse ex culpa et exercitation anim..
+                        </p>
 
-                <svg class="w-12 h-12 text-blue-400 ml-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" />
-                    <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" />
-                    <path d="M9 17v-4" />
-                    <path d="M12 17v-1" />
-                    <path d="M15 17v-2" />
-                    <path d="M12 17v-1" />
-                </svg>
-
-                <h2 class="px-4 text-4xl font-bold my-4">                 
-                    Our advantages
-                </h2> 
-
-                <div class="px-4 text-md">
-
-                    <p>Aute dolore do ipsum reprehenderit eiusmod cupidatat. </p>
-                    <p>Laborum minim et dolor cillum aute minim.</p>
-
-                    <p class="mt-4">Qui irure mollit deserunt mollit culpa.</p>
-                    <p>Amet quis esse consectetur.</p>       
-
-                    <p class="mt-4">dolore anim ut velit ad adipisicing commodo.</p>
-                    <p>consequat eiusmod cupidatat esse reprehenderit irur.</p>
+                    </div>
 
                 </div>
 
-            </div> 
-                        
-            <img class="grid w-full place-content-center scale-80" src="./images/app_2.webp" alt="" />
+                <!-- about 2 -->
+                <div class="mx-auto overflow-hidden grid columns-1 lg:grid-cols-2">
 
-            </div>     
-               
-            </div> 
+                    <div class="flex flex-col h-full p-4 lg:p-16 justify-center ml-0 lg:ml-24">
 
-        </section>      
+                        <svg class="w-12 h-12 text-blue-400 ml-6" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" />
+                            <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" />
+                            <path d="M9 17v-4" />
+                            <path d="M12 17v-1" />
+                            <path d="M15 17v-2" />
+                            <path d="M12 17v-1" />
+                        </svg>
+
+                        <h2 class="px-4 text-4xl font-bold my-4">
+                            Our advantages
+                        </h2>
+
+                        <div class="px-4 text-md">
+
+                            <p>Aute dolore do ipsum reprehenderit eiusmod cupidatat. </p>
+                            <p>Laborum minim et dolor cillum aute minim.</p>
+
+                            <p class="mt-4">Qui irure mollit deserunt mollit culpa.</p>
+                            <p>Amet quis esse consectetur.</p>
+
+                            <p class="mt-4">dolore anim ut velit ad adipisicing commodo.</p>
+                            <p>consequat eiusmod cupidatat esse reprehenderit irur.</p>
+
+                        </div>
+
+                    </div>
+
+                    <img class="grid w-full place-content-center scale-80" src="./images/app_2.webp" alt="" />
+
+                </div>
+
+            </div>
+
+        </section>
 
         <!--================= service ================-->
 
@@ -397,12 +411,12 @@
             <div class="mx-auto max-w-6xl place-content-center">
 
                 <div class="text-center mb-12 px-4">
-                
+
                     <h2 class="mb-4 font-bold text-4xl">Our services</h2>
 
-                    <h5 class="text-md tracking-wide">Commodo occaecat commodo sit commodo consectetur nostrud.</h5>                 
+                    <h5 class="text-md tracking-wide">Commodo occaecat commodo sit commodo consectetur nostrud.</h5>
 
-                </div> 
+                </div>
 
                 <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 sm:grid-cols-2">
 
@@ -415,8 +429,8 @@
                             <div class="absolute bottom-0 right-0 -z-20 top-5 left-5">
 
                                 <svg class="w-10 h-10 text-blue-600" viewBox="0 0 24 24">
-                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                        color="currentColor">
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5" color="currentColor">
                                         <path
                                             d="M19 20.5c.425-.191.79-.439 1.109-.76c1.391-1.402 1.391-3.658 1.391-8.17c0-4.511 0-6.767-1.391-8.168C18.717 2 16.479 2 12 2C7.522 2 5.282 2 3.891 3.402S2.5 7.059 2.5 11.57s0 6.767 1.391 8.169c.32.321.684.569 1.109.76M2.5 8.5h19M7 5.5h.009M11 5.5h.009" />
                                         <path
@@ -445,8 +459,8 @@
                             <div class="absolute bottom-0 right-0 -z-20 top-5 left-5">
 
                                 <svg class="w-10 h-10 text-red-600" viewBox="0 0 24 24">
-                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                        color="currentColor">
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5" color="currentColor">
                                         <path
                                             d="M18 10.997c-.392-.8-1.452-1.976-3.63-1.926c0 0-1.727-.075-3.68-.075c-1.952 0-2.866.046-4.43.075c-1.001-.025-2.904.2-3.78 2.276c-.576 1.75-.6 5.427-.25 7.277c.075.95.576 2.276 2.128 2.976c.95.5 2.478.3 3.63.4M5.984 8.196c-.05-2.375-.15-4.25 2.603-5.801c.926-.375 2.303-.7 4.005.1c1.777 1.075 1.999 2.213 2.153 2.5c.425 1.126.2 2.726.25 3.376" />
                                         <path
@@ -475,8 +489,8 @@
                             <div class="absolute bottom-0 right-0 -z-20 top-5 left-5">
 
                                 <svg class="w-10 h-10 text-green-600" viewBox="0 0 24 24">
-                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                        color="currentColor">
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5" color="currentColor">
                                         <path
                                             d="M4.268 18.845c.225 1.67 1.608 2.979 3.292 3.056c1.416.065 2.855.099 4.44.099s3.024-.034 4.44-.1c1.684-.076 3.067-1.385 3.292-3.055c.147-1.09.268-2.207.268-3.345s-.121-2.255-.268-3.345c-.225-1.67-1.608-2.979-3.292-3.056A95 95 0 0 0 12 9c-1.585 0-3.024.034-4.44.1c-1.684.076-3.067 1.385-3.292 3.055C4.12 13.245 4 14.362 4 15.5s.121 2.255.268 3.345" />
                                         <path
@@ -506,7 +520,8 @@
                             <div class="absolute bottom-0 right-0 -z-20 top-5 left-5">
 
                                 <svg class="w-10 h-10 text-sky-500" viewBox="0 0 24 24">
-                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.5"
                                         d="M12 17c.227 0 .438-.106.86-.318l3.39-1.704c1.5-.754 2.25-1.131 2.25-1.728v-7.5M12 17c-.227 0-.438-.106-.86-.318l-3.39-1.704c-1.5-.754-2.25-1.131-2.25-1.728v-7.5M12 17V9.5m6.5-3.75c0-.597-.75-.974-2.25-1.728l-3.39-1.704C12.438 2.106 12.227 2 12 2s-.438.106-.86.318L7.75 4.022C6.25 4.776 5.5 5.153 5.5 5.75m13 0c0 .597-.75.974-2.25 1.728l-3.39 1.704c-.422.212-.633.318-.86.318M5.5 5.75c0 .597.75.974 2.25 1.728l3.39 1.704c.422.212.633.318.86.318m-2 11.25c0-.69.56-1.25 1.25-1.25h1.5c.69 0 1.25.56 1.25 1.25m-4 0c0 .69.56 1.25 1.25 1.25h1.5c.69 0 1.25-.56 1.25-1.25m-4 0H5m9 0h5"
                                         color="currentColor" />
                                 </svg>
@@ -534,8 +549,8 @@
                             <div class="absolute bottom-0 right-0 -z-20 top-5 left-5">
 
                                 <svg class="w-10 h-10 text-orange-500" viewBox="0 0 24 24">
-                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                        color="currentColor">
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5" color="currentColor">
                                         <path
                                             d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12" />
                                         <path
@@ -553,7 +568,7 @@
                         </h5>
 
                         <p class="mt-2">
-                            Officia fugiat cupidatat deserunt nulla nulla aliqua sunt cillum est enim irure. 
+                            Officia fugiat cupidatat deserunt nulla nulla aliqua sunt cillum est enim irure.
                         </p>
 
                     </div>
@@ -567,8 +582,8 @@
                             <div class="absolute bottom-0 right-0 -z-20 top-5 left-5">
 
                                 <svg class="w-10 h-10 text-violet-600" viewBox="0 0 24 24">
-                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                        color="currentColor">
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5" color="currentColor">
                                         <path
                                             d="M12.034 3.747a2.2 2.2 0 0 0-.892-.234c-1.094-.04-1.942.802-3.637 2.489S4.96 8.532 5 9.619s.954 1.996 2.78 3.812l3.32 3.303c1.827 1.815 2.74 2.723 3.834 2.764s1.942-.803 3.638-2.49c1.367-1.36 2.183-2.17 2.427-3.005M3 12.504c.118 2.872 1.978 8.492 8.37 8.974c.376.028.564.042.618-.072s-.082-.246-.354-.51l-1.22-1.187" />
                                         <path
@@ -581,7 +596,7 @@
                         </span>
 
                         <h5 class="mt-2 text-xl">
-                            Eu minim qui incididunt aute 
+                            Eu minim qui incididunt aute
                         </h5>
 
                         <p class="mt-2">
@@ -596,237 +611,245 @@
 
         </section>
 
-           <!--================= news ================-->
+        <!--================= news ================-->
 
-     <section class="reveal py-20 px-4" id="news">
+        <section class="reveal py-20 px-4" id="news">
 
-    <div class="mx-auto max-w-6xl place-content-center">
+            <div class="mx-auto max-w-6xl place-content-center">
 
-            <div class="text-center mb-12 px-4">
-            
-                <h2 class="mb-4 font-bold text-4xl">News</h2>
+                <div class="text-center mb-12 px-4">
 
-                <h5 class="text-md tracking-wide">Irure est occaecat laborum laboris do elit nostrud est.</h5>
-                
-            </div>
+                    <h2 class="mb-4 font-bold text-4xl">News</h2>
 
-            <!-- card grid -->
+                    <h5 class="text-md tracking-wide">Irure est occaecat laborum laboris do elit nostrud est.</h5>
 
-    <div class="grid lg:grid-cols-2 lg:gap-y-16 gap-12">
-
-      <!-- card 1 -->
-        <div class="grid grid-cols-[40%_60%] gap-4">
-
-          <div class="overflow-hidden">
-            <img class="object-cover rounded-xl h-[160px]" src="./images/news_1.webp" alt="">
-          </div>
-  
-          <div class="w-full p-2 place-content-center">
-
-            <h3 class="text-lg font-bold leading-none">Reprehenderit ipsum.</h3>   
-
-            <p class="mt-3">
-                Mollit enim laboris deserunt dolor irure dolore amet. Ipsum officia enim enim esse eu. 
-            </p>
-          
-          </div>
-
-        </div>
-
-         <!-- card 2 -->
-         <div class="grid grid-cols-[40%_60%] gap-4">
-
-            <div class="overflow-hidden">
-              <img class="object-cover rounded-xl h-[160px]" src="./images/news_2.webp" alt="">
-            </div>
-    
-            <div class="w-full p-2 place-content-center">
-  
-              <h3 class="text-lg font-bold leading-none">Denim deserunt</h3>
-  
-              <p class="mt-3">
-                Reprehenderit sint officia nisi minim minim velit consectetur in deserunt non cupidatat voluptate. 
-              </p>
-            
-            </div>
-  
-          </div>
-        
-        <!-- card 3 -->
-        <div class="grid grid-cols-[40%_60%] gap-4">
-
-            <div class="overflow-hidden">
-              <img class="object-cover rounded-xl h-[160px]" src="./images/news_3.webp" alt="">
-            </div>
-    
-            <div class="w-full p-2 place-content-center">
-  
-              <h3 class="text-lg font-bold leading-none">Mollit laboris dolor</h3>
-  
-              <p class="mt-3">
-                Adipisicing commodo enim aliqua dolor id laborum. Dolor duis non amet culpa anim. 
-              </p>
-            
-            </div>
-  
-          </div>
-
-            <!-- card 4 -->
-        <div class="grid grid-cols-[40%_60%] gap-4">
-
-            <div class="overflow-hidden">
-              <img class="object-cover rounded-xl h-[160px]" src="./images/news_4.webp" alt="">
-            </div>
-    
-            <div class="w-full p-2 place-content-center">
-  
-              <h3 class="text-lg font-bold leading-none">Qui quis dolor</h3>
-  
-              <p class="mt-3">
-                Nisi in fugiat ut ad ut in nisi nisi amet sint. Ipsum officia enim enim esse eu. 
-              </p>
-            
-            </div>
-  
-          </div>
-
-            <!-- card 5 -->
-        <div class="grid grid-cols-[40%_60%] gap-4">
-
-            <div class="overflow-hidden">
-              <img class="object-cover rounded-xl h-[160px]" src="./images/news_5.webp" alt="">
-            </div>
-    
-            <div class="w-full p-2 place-content-center">
-  
-              <h3 class="text-lg font-bold leading-none">Sunt consectetur</h3>
-  
-              <p class="mt-3">
-                Consectetur consequat eu ea reprehenderit veniam fugiat aute mollit anim.  Eu et consequat id minim incididunt.
-              </p>
-            
-            </div>
-  
-          </div>
-
-            <!-- card 6 -->
-        <div class="grid grid-cols-[40%_60%] gap-4">
-
-            <div class="overflow-hidden">
-              <img class="object-cover rounded-xl h-[160px]" src="./images/news_6.webp" alt="">
-            </div>
-    
-            <div class="w-full p-2 place-content-center">
-  
-              <h3 class="text-lg font-bold leading-none">Elit dolore labore</h3>
-  
-              <p class="mt-3">
-                Duis do aute consequat sint. Ea aliqua minim voluptate mollit consectetur laboris. Ullamco esse. 
-              </p>
-            
-            </div>
-  
-          </div>
-
-    </div>
-
-      </div>
-
-   </section> 
-
-     <!--================= map ================-->
-
-     <section class="reveal bg-[#f8fcff] pt-20">
-
-        <div class="mx-auto max-w-7xl">
-
-            <div class="text-center px-4">
-            
-                <h2 class="mb-4 font-bold text-4xl">Crypto Map</h2>
-
-                <h5 class="text-md tracking-wide">Eu cupidatat culpa proident dolor irure.</h5>
-                
-            </div>
-
-        </div>
-
-            <div class="mx-auto max-w-4xl mt-10">                 
-       
-                    <div class="w-full h-11 rounded-t-lg bg-gray-200 flex justify-start items-center space-x-1.5 px-3">
-                        <span class="w-3 h-3 rounded-full bg-red-400"></span>
-                        <span class="w-3 h-3 rounded-full bg-yellow-400"></span>
-                        <span class="w-3 h-3 rounded-full bg-green-400"></span>
-                    </div>
-
-                    <div class="bg-gray-50 border-t-0 w-full h-96">
-                        
-                            <!-- google map -->
-                        <iframe class="w-full h-full overflow-hidden" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6030.418742494061!2d-111.34563870463673!3d26.01036670629853!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1471908546569" frameborder="0"></iframe>                       
-
-                    </div> 
-              
                 </div>
 
-    </section>      
+                <!-- card grid -->
 
-    </main>        
-    
+                <div class="grid lg:grid-cols-2 lg:gap-y-16 gap-12">
+
+                    <!-- card 1 -->
+                    <div class="grid grid-cols-[40%_60%] gap-4">
+
+                        <div class="overflow-hidden">
+                            <img class="object-cover rounded-xl h-40" src="./images/news_1.webp" alt="">
+                        </div>
+
+                        <div class="w-full p-2 place-content-center">
+
+                            <h3 class="text-lg font-bold leading-none">Reprehenderit ipsum.</h3>
+
+                            <p class="mt-3">
+                                Mollit enim laboris deserunt dolor irure dolore amet. Ipsum officia enim enim esse eu.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- card 2 -->
+                    <div class="grid grid-cols-[40%_60%] gap-4">
+
+                        <div class="overflow-hidden">
+                            <img class="object-cover rounded-xl h-40" src="./images/news_2.webp" alt="">
+                        </div>
+
+                        <div class="w-full p-2 place-content-center">
+
+                            <h3 class="text-lg font-bold leading-none">Denim deserunt</h3>
+
+                            <p class="mt-3">
+                                Reprehenderit sint officia nisi minim minim velit consectetur in deserunt non cupidatat
+                                voluptate.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- card 3 -->
+                    <div class="grid grid-cols-[40%_60%] gap-4">
+
+                        <div class="overflow-hidden">
+                            <img class="object-cover rounded-xl h-40" src="./images/news_3.webp" alt="">
+                        </div>
+
+                        <div class="w-full p-2 place-content-center">
+
+                            <h3 class="text-lg font-bold leading-none">Mollit laboris dolor</h3>
+
+                            <p class="mt-3">
+                                Adipisicing commodo enim aliqua dolor id laborum. Dolor duis non amet culpa anim.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- card 4 -->
+                    <div class="grid grid-cols-[40%_60%] gap-4">
+
+                        <div class="overflow-hidden">
+                            <img class="object-cover rounded-xl h-40" src="./images/news_4.webp" alt="">
+                        </div>
+
+                        <div class="w-full p-2 place-content-center">
+
+                            <h3 class="text-lg font-bold leading-none">Qui quis dolor</h3>
+
+                            <p class="mt-3">
+                                Nisi in fugiat ut ad ut in nisi nisi amet sint. Ipsum officia enim enim esse eu.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- card 5 -->
+                    <div class="grid grid-cols-[40%_60%] gap-4">
+
+                        <div class="overflow-hidden">
+                            <img class="object-cover rounded-xl h-40" src="./images/news_5.webp" alt="">
+                        </div>
+
+                        <div class="w-full p-2 place-content-center">
+
+                            <h3 class="text-lg font-bold leading-none">Sunt consectetur</h3>
+
+                            <p class="mt-3">
+                                Consectetur consequat eu ea reprehenderit veniam fugiat aute mollit anim. Eu et
+                                consequat id minim incididunt.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- card 6 -->
+                    <div class="grid grid-cols-[40%_60%] gap-4">
+
+                        <div class="overflow-hidden">
+                            <img class="object-cover rounded-xl h-40" src="./images/news_6.webp" alt="">
+                        </div>
+
+                        <div class="w-full p-2 place-content-center">
+
+                            <h3 class="text-lg font-bold leading-none">Elit dolore labore</h3>
+
+                            <p class="mt-3">
+                                Duis do aute consequat sint. Ea aliqua minim voluptate mollit consectetur laboris.
+                                Ullamco esse.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--================= map ================-->
+
+        <section class="reveal bg-[#f8fcff] pt-20">
+
+            <div class="mx-auto max-w-7xl">
+
+                <div class="text-center px-4">
+
+                    <h2 class="mb-4 font-bold text-4xl">Crypto Map</h2>
+
+                    <h5 class="text-md tracking-wide">Eu cupidatat culpa proident dolor irure.</h5>
+
+                </div>
+
+            </div>
+
+            <div class="mx-auto max-w-4xl mt-10">
+
+                <div class="w-full h-11 rounded-t-lg bg-gray-200 flex justify-start items-center space-x-1.5 px-3">
+                    <span class="w-3 h-3 rounded-full bg-red-400"></span>
+                    <span class="w-3 h-3 rounded-full bg-yellow-400"></span>
+                    <span class="w-3 h-3 rounded-full bg-green-400"></span>
+                </div>
+
+                <div class="bg-gray-50 border-t-0 w-full h-96">
+
+                    <!-- google map -->
+                    <iframe class="w-full h-full overflow-hidden"
+                        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6030.418742494061!2d-111.34563870463673!3d26.01036670629853!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1471908546569"
+                        frameborder="0"></iframe>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
     <!--================= footer ================-->
 
-    <footer class="w-full border-t-1 border-solid border-gray-100 py-20 px-4 mb-6" id="contact">
+    <footer class="w-full border-t border-solid border-gray-100 py-20 px-4 mb-6" id="contact">
 
-        <div class="mx-auto max-w-7xl flex flex-row flex-wrap lg:gap-x-6 gap-4 justify-between">      
+        <div class="mx-auto max-w-7xl flex flex-row flex-wrap lg:gap-x-6 gap-4 justify-between">
 
-            <!-- 1 -->         
-            <div class="w-full lg:w-[40%] lg:flex-1 justify-items-center p-4">      
-                
-                <div class="flex flex-row items-center flex-shrink-0">
+            <!-- 1 -->
+            <div class="w-full lg:w-[40%] lg:flex-1 justify-items-center p-4">
 
-                <svg class="w-9 h-9 text-red-500" viewBox="0 0 24 24">
-                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                        d="M6.266 2h11.468c.66 0 1.756.098 2.128 1.152c.222.628.135 1.333.376 1.953c.253.652.65 1.281 1.036 1.849c.382.562.822 1.17.707 1.84c-.13.756-.735 1.467-1.536 1.845c-1.64.774-4.064.308-4.45-2.493c-.323.894-1.315 2.8-4.034 2.8c-2.72 0-3.633-1.906-3.956-2.8c-.386 2.8-2.81 3.267-4.45 2.493c-.8-.378-1.407-1.09-1.536-1.845c-.115-.67.325-1.278.707-1.84c.385-.568.783-1.197 1.036-1.849c.242-.62.154-1.325.376-1.953C4.51 2.098 5.605 2 6.266 2m10.697 18.665v-5.342m1.563 0v-1.336m0 8.013v-1.335m-1.563-2.671h3.126m0 0c.518 0 .938.448.938 1.001v.668c0 .553-.42 1.002-.938 1.002h-4.064m4.064-2.671c.518 0 .938-.449.938-1.002v-.668c0-.553-.42-1.001-.938-1.001h-4.064M3.02 10.481v4.508c0 2.832 0 4.249.879 5.129c.88.88 2.294.88 5.123.88h4.002"
-                        color="currentColor" />
-                </svg>
+                <div class="flex flex-row items-center shrink-0">
 
-            <a class="px-1 text-xl font-bold text-red-500" href="https://snoo.vercel.app/">CryptoSnoo</a> 
+                    <svg class="w-9 h-9 text-red-500" viewBox="0 0 24 24">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M6.266 2h11.468c.66 0 1.756.098 2.128 1.152c.222.628.135 1.333.376 1.953c.253.652.65 1.281 1.036 1.849c.382.562.822 1.17.707 1.84c-.13.756-.735 1.467-1.536 1.845c-1.64.774-4.064.308-4.45-2.493c-.323.894-1.315 2.8-4.034 2.8c-2.72 0-3.633-1.906-3.956-2.8c-.386 2.8-2.81 3.267-4.45 2.493c-.8-.378-1.407-1.09-1.536-1.845c-.115-.67.325-1.278.707-1.84c.385-.568.783-1.197 1.036-1.849c.242-.62.154-1.325.376-1.953C4.51 2.098 5.605 2 6.266 2m10.697 18.665v-5.342m1.563 0v-1.336m0 8.013v-1.335m-1.563-2.671h3.126m0 0c.518 0 .938.448.938 1.001v.668c0 .553-.42 1.002-.938 1.002h-4.064m4.064-2.671c.518 0 .938-.449.938-1.002v-.668c0-.553-.42-1.001-.938-1.001h-4.064M3.02 10.481v4.508c0 2.832 0 4.249.879 5.129c.88.88 2.294.88 5.123.88h4.002"
+                            color="currentColor" />
+                    </svg>
+
+                    <a class="px-1 text-xl font-bold text-red-500" href="https://snoo.vercel.app/">CryptoSnoo</a>
+
+                </div>
+
+                <div class="flex text-sm mt-2">
+
+                    ©
+                    <script>document.write(new Date().getFullYear());</script>
+
+                    by
+
+                    <a class="flex items-center ml-1 uppercase hover:text-red-500 hover:font-bold"
+                        href="https://github.com/yojeero" target="_blank">
+
+                        yojee
+                    </a>
+
+                </div>
 
             </div>
 
-            <div class="flex text-sm mt-2">  
-        
-                © <script>document.write(new Date().getFullYear());</script>
-                
-                by 
-                                       
-                <a class="flex items-center ml-1 uppercase hover:text-red-500 hover:font-bold" href="https://github.com/yojeero" target="_blank">                       
-        
-                    yojee      
-                </a>
-                
-            </div> 
-
-            </div>
- 
             <!-- 2 -->
-            <div class="w-[40%] lg:w-[15%] p-4 flex-1">    
+            <div class="w-[40%] lg:w-[15%] p-4 flex-1">
 
-              <p class="text-sm">Links</p> 
+                <p class="text-sm">Links</p>
 
                 <ul class="mt-3 space-y-3 text-xs uppercase">
-        
-                    <li><a href="#" class="hover:text-red-500 hover:font-bold">home</a></li>        
-                    <li><a href="#about" class="hover:text-red-500 hover:font-bold">about</a></li>        
-                    <li><a href="#service" class="hover:text-red-500 hover:font-bold">services</a></li>        
-                    <li><a href="#news" class="hover:text-red-500 hover:font-bold">news</a></li>        
-        
-                </ul>     
+
+                    <li><a href="#" class="hover:text-red-500 hover:font-bold">home</a></li>
+                    <li><a href="#about" class="hover:text-red-500 hover:font-bold">about</a></li>
+                    <li><a href="#service" class="hover:text-red-500 hover:font-bold">services</a></li>
+                    <li><a href="#news" class="hover:text-red-500 hover:font-bold">news</a></li>
+
+                </ul>
 
             </div>
 
             <!-- 3 -->
-            <div class="w-[40%] lg:w-[15%] p-4 flex-1">    
+            <div class="w-[40%] lg:w-[15%] p-4 flex-1">
 
-                <p class="text-sm">Work time</p> 
+                <p class="text-sm">Work time</p>
 
                 <dl class="mt-3 space-y-3 text-xs uppercase">
                     <dt>
@@ -845,99 +868,111 @@
                         Day off
                     </dd>
                 </dl>
-  
+
             </div>
 
             <!-- 4 -->
-            <div class="w-[40%] lg:w-[15%] p-4 flex-1">        
+            <div class="w-[40%] lg:w-[15%] p-4 flex-1">
 
-            <p class="text-sm">Contact</p> 
+                <p class="text-sm">Contact</p>
 
-            <div class="mt-3 space-y-3 text-xs uppercase">            
-                
-            <p class="text-md font-bold">Snoo Bank</p>
+                <div class="mt-3 space-y-3 text-xs uppercase">
 
-            <p class="text-md text-red-500 font-bold">(+0) 111 222 33 44</p>
+                    <p class="text-md font-bold">Snoo Bank</p>
 
-            <p class="text-md text-red-500 font-bold">
-                <a class="hover:text-black"
-                    onClick="javascript:window.open('mailto:your@email.com', 'Mail'); event.preventDefault()"
-                    href="mailto:your@email.com?Subject=Hi%20Snoo%20Poe'">
-            
-                    snoo@snoo.bank
-                </a>
-            </p>
-             
-                
-            </div> 
+                    <p class="text-md text-red-500 font-bold">(+0) 111 222 33 44</p>
+
+                    <p class="text-md text-red-500 font-bold">
+                        <a class="hover:text-black"
+                            onClick="javascript:window.open('mailto:your@email.com', 'Mail'); event.preventDefault()"
+                            href="mailto:your@email.com?Subject=Hi%20Snoo%20Poe'">
+
+                            snoo@snoo.bank
+                        </a>
+                    </p>
+
+
+                </div>
 
             </div>
 
-            <!-- 5 --> 
-            <div class="w-[40%] lg:w-[15%] p-4 flex-1">    
+            <!-- 5 -->
+            <div class="w-[40%] lg:w-[15%] p-4 flex-1">
 
-            <p class="text-sm">Follow Us</p>       
+                <p class="text-sm">Follow Us</p>
 
-            <div class="mt-3 flex flex-row gap-x-3">
+                <div class="mt-3 flex flex-row gap-x-3">
 
-                <!-- twitter -->
-                <a href="https://x.com/" target="_blank">
-                    
-                    <svg class="w-6 h-6 text-slate-500 hover:text-red-500" viewBox="0 0 24 24">
-                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                            color="currentColor">
-                            <path
-                                d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12.001 2.5c4.478 0 6.717 0 8.108 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.717 0-8.109-1.391c-1.39-1.392-1.39-3.63-1.39-8.109" />
-                            <path d="m7 17l4.194-4.193M17 7l-4.193 4.194m0 0L9.777 7H7l4.194 5.807m1.613-1.614L17 17h-2.778l-3.028-4.193" />
-                        </g>
-                    </svg>
-                
-                </a>         
+                    <!-- twitter -->
+                    <a href="https://x.com/" target="_blank">
 
-                 <!-- facebook -->
-                 <a href="https://facebook.com/" target="_blank">
+                        <svg class="w-6 h-6 text-slate-500 hover:text-red-500" viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5" color="currentColor">
+                                <path
+                                    d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12.001 2.5c4.478 0 6.717 0 8.108 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.717 0-8.109-1.391c-1.39-1.392-1.39-3.63-1.39-8.109" />
+                                <path
+                                    d="m7 17l4.194-4.193M17 7l-4.193 4.194m0 0L9.777 7H7l4.194 5.807m1.613-1.614L17 17h-2.778l-3.028-4.193" />
+                            </g>
+                        </svg>
 
-                    <svg class="w-6 h-6 text-slate-500 hover:text-red-500" viewBox="0 0 24 24">
-                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                            color="currentColor">
-                            <path
-                                d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12" />
-                            <path d="M16.927 8.026h-2.945a1.9 1.9 0 0 0-1.9 1.886l-.086 11.515m-1.914-7.425h4.803" />
-                        </g>
-                    </svg>
+                    </a>
 
-                </a>
-                
+                    <!-- facebook -->
+                    <a href="https://facebook.com/" target="_blank">
+
+                        <svg class="w-6 h-6 text-slate-500 hover:text-red-500" viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5" color="currentColor">
+                                <path
+                                    d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12" />
+                                <path
+                                    d="M16.927 8.026h-2.945a1.9 1.9 0 0 0-1.9 1.886l-.086 11.515m-1.914-7.425h4.803" />
+                            </g>
+                        </svg>
+
+                    </a>
+
                     <!-- instagram -->
                     <a href="https://instagram.com/" target="_blank">
-                        
-                    <svg class="w-6 h-6 text-slate-500 hover:text-red-500" viewBox="0 0 24 24">
-                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                            color="currentColor">
-                            <path
-                                d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12" />
-                            <path d="M16.5 12a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m1.008-5.5h-.01" />
-                        </g>
-                    </svg>
-                        
-                    </a>                    
-                
-            </div> 
+
+                        <svg class="w-6 h-6 text-slate-500 hover:text-red-500" viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5" color="currentColor">
+                                <path
+                                    d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12" />
+                                <path d="M16.5 12a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m1.008-5.5h-.01" />
+                            </g>
+                        </svg>
+
+                    </a>
+
+                </div>
 
             </div>
-   
-        </div>                   
 
-    </footer>   
+        </div>
+
+    </footer>
 
     <!-- ALL JS -->
- 
-    <script src="js/scrollreveal.min.js"></script> 
+
+    <script src="js/scrollreveal.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/visiters-counter.js"></script>
     <script src="js/yandex-map.js"></script>
-    <script src="js/up.min.js"></script>   
+    <script src="js/up.min.js"></script>
+
+    <!-- LOADER HIDE -->
+    <script>
+        window.addEventListener("load", () => {
+            const loader = document.querySelector(".loader");
+            if (!loader) return;
+            loader.classList.add("opacity-0");
+            setTimeout(() => loader.remove(), 300);
+        });
+    </script>
 
 </body>
-</html>
 
+</html>
