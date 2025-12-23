@@ -2,12 +2,11 @@
 
 ### [Snoo](https://snookee.vercel.app/) - tailwind template.
 
-- Tailwind CSS v4
-- HTML5 and CSS
-- SVG icons
-- Google Fonts
-- 100% Responsive
-- Whatsapp chat
-- Visiters counter   
-- Yandex maps   
-- Scroll reveal
+-> Tailwind v4  
+-> 100% responsive  
+-> HTML5 and CSS  
+-> Google Fonts  
+-> SVG icons  
+-> Whatsapp chat  
+-> Visiters counter  
+-> Yandex maps
