@@ -10,7 +10,7 @@ Optimized for desktop, tablet, and mobile devices using Tailwind v4.
 #### Modern One-Page Layout
 Includes Hero, About, Services, News, Map, and Contact sections.
 
-#### Tailwind CSS Powered
+#### Tailwind v4
 Clean, scalable styling with no external UI frameworks required.
 
 #### Smooth Animations & Effects   
