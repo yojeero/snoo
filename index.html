@@ -9,241 +9,186 @@
 
     <title>Snoo - Tailwind CSS Template</title>
 
-    <meta content="Responsive Tailwind CSS Template" name="description" />
-    <meta content="Onepage, creative, modern, Tailwind CSS, multipurpose, landing, clean" name="keywords" />
+    <meta content="Crypto Tailwind template" name="description" />
+    <link rel="icon" type="./image/svg+xml" href="./images/fav.svg">
 
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
-    <link rel="icon" type="image/svg+xml" href="./images/fav.svg">
-
-    <!-- CSS  -->
-    <link rel="stylesheet" href="./css/style.css">
+<!-- CSS -->
+  <link rel="stylesheet" href="./assets/index.css">
 
 </head>
 
-<body>
+<body class="loading">
 
-    <!--================= loader ================-->
+  <div class="loader">
+    <div class="loader-spinner"></div>
+  </div>
 
-    <div class="absolute top-0 bottom-0 left-0 right-0 z-50 flex items-center justify-center m-auto bg-white loader">
+    <main>
 
-        <div class="w-12 h-12 border-4 border-solid rounded-full animate-spin border-red-500 border-t-transparent">
-        </div>
+        <header>     
 
-    </div>
+            <div class="logo">      
+                
+                <a href="https://snookee.vercel.app/" target="_blank">
 
-    <!--================= main ================-->
+                    <svg viewBox="0 0 24 24">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                        d="M6.266 2h11.468c.66 0 1.756.098 2.128 1.152c.222.628.135 1.333.376 1.953c.253.652.65 1.281 1.036 1.849c.382.562.822 1.17.707 1.84c-.13.756-.735 1.467-1.536 1.845c-1.64.774-4.064.308-4.45-2.493c-.323.894-1.315 2.8-4.034 2.8c-2.72 0-3.633-1.906-3.956-2.8c-.386 2.8-2.81 3.267-4.45 2.493c-.8-.378-1.407-1.09-1.536-1.845c-.115-.67.325-1.278.707-1.84c.385-.568.783-1.197 1.036-1.849c.242-.62.154-1.325.376-1.953C4.51 2.098 5.605 2 6.266 2m10.697 18.665v-5.342m1.563 0v-1.336m0 8.013v-1.335m-1.563-2.671h3.126m0 0c.518 0 .938.448.938 1.001v.668c0 .553-.42 1.002-.938 1.002h-4.064m4.064-2.671c.518 0 .938-.449.938-1.002v-.668c0-.553-.42-1.001-.938-1.001h-4.064M3.02 10.481v4.508c0 2.832 0 4.249.879 5.129c.88.88 2.294.88 5.123.88h4.002"
+                        color="currentColor" />
+                        </svg> 
+                        
+                        CryptoSnoo
+                </a>
 
-    <main class="w-full mx-auto">
+            </div>
 
-        <!--================= top menu ================-->
+            <div class="top-nav">      
+       
+                    <div class="top-phone">
 
-        <header class="w-full py-3 border-b border-solid border-gray-100">
-
-            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                <div class="flex items-center justify-between">
-
-                    <div class="flex flex-row items-center shrink-0">
-
-                        <svg class="w-9 h-9 text-red-500" viewBox="0 0 24 24">
-                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="1.5"
-                                d="M6.266 2h11.468c.66 0 1.756.098 2.128 1.152c.222.628.135 1.333.376 1.953c.253.652.65 1.281 1.036 1.849c.382.562.822 1.17.707 1.84c-.13.756-.735 1.467-1.536 1.845c-1.64.774-4.064.308-4.45-2.493c-.323.894-1.315 2.8-4.034 2.8c-2.72 0-3.633-1.906-3.956-2.8c-.386 2.8-2.81 3.267-4.45 2.493c-.8-.378-1.407-1.09-1.536-1.845c-.115-.67.325-1.278.707-1.84c.385-.568.783-1.197 1.036-1.849c.242-.62.154-1.325.376-1.953C4.51 2.098 5.605 2 6.266 2m10.697 18.665v-5.342m1.563 0v-1.336m0 8.013v-1.335m-1.563-2.671h3.126m0 0c.518 0 .938.448.938 1.001v.668c0 .553-.42 1.002-.938 1.002h-4.064m4.064-2.671c.518 0 .938-.449.938-1.002v-.668c0-.553-.42-1.001-.938-1.001h-4.064M3.02 10.481v4.508c0 2.832 0 4.249.879 5.129c.88.88 2.294.88 5.123.88h4.002"
-                                color="currentColor" />
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                         </svg>
 
-                        <a href="https://snoo.vercel.app/" target="_blank" class="px-1 text-xl font-bold text-red-500">
-
-                            CryptoSnoo
-                        </a>
+                        +0 111 222 33 44
 
                     </div>
+  
+                    <a class="top-chat" href="https://wa.me/01112223344?text=I%20look%20yours%20help" target="_blank">
 
-                    <div class="hidden lg:ml-16 lg:flex lg:items-center lg:justify-center lg:space-x-10 uppercase">
-
-                        <div class="flex items-center space-x-10">
-
-                            <!-- phone top -->
-                            <p class="flex items-center px-2 text-sm">
-
-                                <svg class="w-5 h-5 m-2 text-gray-800" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path
-                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                                </svg>
-
-                                +0 111 222 33 44
-                            </p>
-
-                            <!-- name top -->
-                            <a class="flex items-center px-2 hover:text-red-500 text-xs"
-                                href="https://wa.me/01112223344?text=I%20look%20yours%20help" target="_blank">
-
-                                <svg class="w-5 h-5 m-2 text-gray-800" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-                                    <path d="M8 10h.01" />
-                                    <path d="M12 10h.01" />
-                                    <path d="M16 10h.01" />
-                                </svg>
-
-                                snoo chat
-                            </a>
-
-                        </div>
-
-                        <!-- visiters counter -->
-                        <div class="flex items-center px-2">
-
-                            <svg class="w-6 h-6 mr-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
-                                <polyline points="16 7 22 7 22 13" />
-                            </svg>
-
-                            <div class="w-50 text-xs"><span class="counter-value" data-target="1532">420</span>
-                                visited</div>
-
-                        </div>
-
-                    </div>
-
-                    <!-- navigation -->
-
-                    <!-- open button -->
-                    <button id="menu" class="flex cursor-pointer" onclick="openNav()">
-
-                        <svg class="flex h-9 w-9 cursor-pointer bg-transparent pr-4 text-black" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <line x1="4" x2="20" y1="12" y2="12" />
-                            <line x1="4" x2="20" y1="6" y2="6" />
-                            <line x1="4" x2="20" y1="18" y2="18" />
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                            <path d="M8 10h.01" />
+                            <path d="M12 10h.01" />
+                            <path d="M16 10h.01" />
                         </svg>
 
-                    </button>
+                        snoo chat
 
-                    <!-- close button -->
-                    <button id="close-nav" onclick="closeNav()">
+                    </a>        
+ 
+                <div class="top-visite">
+                
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+                        <polyline points="16 7 22 7 22 13" />
+                    </svg>          
+                        
+                        <span class="counter-value" data-target="1532">420</span>                  
 
-                        <svg class="absolute z-50 top-8 right-16 w-6 h-6 cursor-pointer text-black" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path d="M7 7h10v10" />
-                            <path d="M7 17 17 7" />
-                        </svg>
+                        visited        
+                
+                </div>        
+            
+            </div>
 
-                    </button>
+                <!-- navigation -->
 
-                    <!-- nav content-->
-                    <div id="nav-content"
-                        class="fixed z-40 top-0 right-0 h-full w-full overflow-hidden bg-white shadow-lg transition-all duration-300">
+                <!-- open button -->
+                <button id="menu">
 
-                        <ul class="nav h-full w-full lg:ml-16 ml-8  
-					grid auto-cols-max content-center justify-start transition duration-500">
+                    <svg viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <line x1="4" x2="20" y1="12" y2="12" />
+                        <line x1="4" x2="20" y1="6" y2="6" />
+                        <line x1="4" x2="20" y1="18" y2="18" />
+                    </svg>
 
-                            <li class="text-2xl font-bold text-red-500 pb-16">CryptoSnoo &reg;</li>
+                </button>
 
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#service">Services</a></li>
-                            <li><a href="#news">News</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                <!-- close button -->
+                <button id="close-nav">
 
-                            <li class="flex pt-20">Copyright &copy; CryptoSnoo</li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M7 7h10v10" />
+                        <path d="M7 17 17 7" />
+                    </svg>
 
-                        </ul>
+                </button>
 
-                    </div>
+                <div id="nav-overlay"></div>
+
+                <!-- nav content-->
+                <div id="nav-content">
+
+                    <ul class="nav">
+
+                        <li class="li-brand">CryptoSnoo &reg;</li>
+
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#service">Services</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#contact">Contact</a></li>
+
+                        <li class="last">Copyright &copy; CryptoSnoo</li>
+
+                    </ul>
 
                 </div>
-            </div>
 
         </header>
 
-        <!--================= head top ================-->
+        <section class="top-wrap">
 
-        <section class="h-143.75 w-full top-bg">
+                <div class="top-bg">
 
-            <div class="flex px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                    <div class="head-text">
 
-                <div class="flex w-full lg:w-1/2 h-118.75 p-4 items-center">
+                        <div class="head-about">
 
-                    <div class="w-full text-center lg:text-left">
+                            <h1>Snoo</h1>
 
-                        <div class="max-w-sm mx-auto sm:max-w-md md:max-w-full">
+                            <h2>crypto exchange</h2>
 
-                            <h1 class="text-6xl capitalize">
-                                Snoo
-                            </h1>
+                            <div class="head-offer">
 
-                            <h2 class="col-start-1 col-end-2 text-4xl ml-2">
-                                crypto exchange
-                            </h2>
-
-                            <div class="mt-6 ml-2 lg:mt-14 lg:flex lg:items-center">
-
-                                <div class="flex justify-center shrink-0 -space-x-4 overflow-hidden lg:justify-start">
-
-                                    <img class="inline-block rounded-full w-14 h-14 ring-2 ring-white"
-                                        src="./images/k-1.webp" alt="" />
-
-                                    <img class="inline-block rounded-full w-14 h-14 ring-2 ring-white"
-                                        src="./images/k-2.webp" alt="" />
-
-                                    <img class="inline-block rounded-full w-14 h-14 ring-2 ring-white"
-                                        src="./images/k-3.webp" alt="" />
-
+                                <div>
+                                    <img src="./images/k-1.webp" alt="" />
+                                    <img src="./images/k-2.webp" alt="" />
+                                    <img  src="./images/k-3.webp" alt="" />
                                 </div>
 
-                                <p class="mt-4 text-md lg:mt-0 lg:ml-4">Join more than <span class="font-bold">45860+
-                                        clients</span>, satisfied with the result of our work.</p>
+                                <p>Join more than <span>45860+ clients</span>, satisfied with the result of our work.</p>
 
                             </div>
 
                         </div>
 
-                        <div class="flex items-center justify-center lg:justify-start space-x-3 mt-8">
+                        <div class="head-chat">
 
-                            <a href="https://wa.me/01112223344?text=I%20look%20yours%20help" target="_blank" title=""
-                                class="inline-flex items-center justify-center px-8 py-3 text-sm font-medium text-white transition-all duration-200 rounded-sm cursor-pointer bg-red-500 hover:shadow-2xl">
-
-                                chat
-
-                                <svg class="w-6 h-6 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path d="M8 9h8" />
-                                    <path d="M8 13h6" />
-                                    <path
-                                        d="M9 18h-3a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-3l-3 3l-3 -3z" />
-                                </svg>
+                            <a class="btn" href="https://wa.me/01112223344?text=I%20look%20yours%20help" target="_blank">          
+                            
+                                    chat
+                            
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M8 9h8" />
+                                        <path d="M8 13h6" />
+                                        <path d="M9 18h-3a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-3l-3 3l-3 -3z" />
+                                    </svg>          
 
                             </a>
 
-                            <!-- social top -->
-                            <p class="flex items-center ml-4 py-4 text-lg font-bold cursor-pointer">
-
-                                open
-
-                                <svg class="w-6 h-6 mx-2 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                <svg class="social" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                     <path d="M5 12h.5m3 0h1.5m3 0h6" />
                                     <path d="M15 16l4 -4" />
                                     <path d="M15 8l4 4" />
-                                </svg>
-
-                            </p>
-
-                            <!-- facebook -->
+                                </svg>                  
+                  
                             <a href="https://facebook.com/" target="_blank">
 
-                                <svg class="w-6 h-6 text-slate-500 hover:text-red-500" viewBox="0 0 24 24">
-                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="1.5" color="currentColor">
+                                <svg class="social" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor">
                                         <path
                                             d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12" />
                                         <path
@@ -252,13 +197,11 @@
                                 </svg>
 
                             </a>
-
-                            <!-- twitter -->
+   
                             <a href="https://x.com/" target="_blank">
 
-                                <svg class="w-6 h-6 text-slate-500 hover:text-red-500" viewBox="0 0 24 24">
-                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="1.5" color="currentColor">
+                                <svg class="social" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor">
                                         <path
                                             d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12.001 2.5c4.478 0 6.717 0 8.108 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.717 0-8.109-1.391c-1.39-1.392-1.39-3.63-1.39-8.109" />
                                         <path
@@ -267,13 +210,11 @@
                                 </svg>
 
                             </a>
-
-                            <!-- instagram -->
+       
                             <a href="https://instagram.com/" target="_blank">
 
-                                <svg class="w-6 h-6 text-slate-500 hover:text-red-500" viewBox="0 0 24 24">
-                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="1.5" color="currentColor">
+                                <svg class="social" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor">
                                         <path
                                             d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12" />
                                         <path d="M16.5 12a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m1.008-5.5h-.01" />
@@ -285,15 +226,7 @@
                         </div>
                     </div>
 
-
-                </div>
-
-                <!-- head image -->
-                <div class="hidden lg:flex w-full scale-90 lg:w-1/2 h-118.75 object-cover mt-20">
-
-                    <img class="rounded-bl-[56px]" src="./images/top.webp" alt="">
-
-                </div>
+                <div class="head-pic"><img src="./images/top.webp" alt=""></div>
 
             </div>
 
@@ -301,56 +234,43 @@
 
         <!--================= equipment ================-->
 
-        <section
-            class="reveal flex w-full flex-row flex-wrap items-center justify-center gap-12 lg:mt-30 lg:mb-20 my-12">
-
-            <img class="h-12.5 object-cover" src="./images/scout.svg" alt="" />
-
-            <img class="h-12.5 object-cover" src="./images/cos.svg" alt="" />
-
-            <img class="h-12.5 object-cover" src="./images/netflix.svg" alt="" />
-
-            <img class="h-12.5 object-cover" src="./images/enigma.svg" alt="" />
-
-            <img class="h-12.5 object-cover" src="./images/expel.svg" alt="" />
-
+        <section class="reveal brands">
+            <img src="./images/scout.svg" alt="" />
+            <img src="./images/cos.svg" alt="" />
+            <img src="./images/netflix.svg" alt="" />
+            <img src="./images/enigma.svg" alt="" />
+            <img src="./images/expel.svg" alt="" />
         </section>
 
         <!--================= about ================-->
 
-        <section class="reveal pt-16 bg-[#e9f3fa]" id="about">
+        <section class="reveal" id="about">
 
-            <div class="w-full mx-auto max-w-7xl">
+                <div class="about-1">
 
-                <!-- about 1 -->
-                <div class="mx-auto overflow-hidden grid columns-1 lg:grid-cols-2">
+                    <img src="./images/app_1.webp" alt="" />
 
-                    <img class="grid w-full place-content-center scale-90" src="./images/app_1.webp" alt="" />
+                    <div class="about-txt">
 
-                    <div class="flex flex-col h-full p-4 lg:p-16 justify-center">
-
-                        <svg class="w-12 h-12 text-red-600 ml-6" viewBox="0 0 24 24">
-                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="1.5"
+                        <svg viewBox="0 0 24 24">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                                 d="M6.266 2h11.468c.66 0 1.756.098 2.128 1.152c.222.628.135 1.333.376 1.953c.253.652.65 1.281 1.036 1.849c.382.562.822 1.17.707 1.84c-.13.756-.735 1.467-1.536 1.845c-1.64.774-4.064.308-4.45-2.493c-.323.894-1.315 2.8-4.034 2.8c-2.72 0-3.633-1.906-3.956-2.8c-.386 2.8-2.81 3.267-4.45 2.493c-.8-.378-1.407-1.09-1.536-1.845c-.115-.67.325-1.278.707-1.84c.385-.568.783-1.197 1.036-1.849c.242-.62.154-1.325.376-1.953C4.51 2.098 5.605 2 6.266 2m10.697 18.665v-5.342m1.563 0v-1.336m0 8.013v-1.335m-1.563-2.671h3.126m0 0c.518 0 .938.448.938 1.001v.668c0 .553-.42 1.002-.938 1.002h-4.064m4.064-2.671c.518 0 .938-.449.938-1.002v-.668c0-.553-.42-1.001-.938-1.001h-4.064M3.02 10.481v4.508c0 2.832 0 4.249.879 5.129c.88.88 2.294.88 5.123.88h4.002"
                                 color="currentColor" />
                         </svg>
 
-                        <h2 class="px-4 text-4xl font-bold my-4">
-                            SnooBank
-                        </h2>
+                        <h2>SnooBank</h2>
 
-                        <p class="px-4 text-md">
+                        <p>
                             Cupidatat esse magna magna quis aute nisi. Laborum deserunt nulla ad voluptate qui sit
                             ullamco nostrud exercitation ex labore. Ullamco laborum do qui non eu cillum aliqua.
                         </p>
 
-                        <p class="mt-4 px-4 text-md">
+                        <p>
                             Amet culpa duis pariatur anim laboris nisi cillum sunt duis pariatur aliquip veniam aliquip
                             aliquip. Esse cillum ea aute exercitation cupidatat eu cillum qui velit.
                         </p>
 
-                        <p class="mt-4 px-4 text-md">
+                        <p>
                             Incididunt irure eu incididunt dolor consequat velit commodo sint enim aute officia deserunt
                             non mollit. Nulla mollit magna sit ex sunt reprehenderit velit incididunt Ullamco veniam et
                             ut eu esse ex culpa et exercitation anim..
@@ -360,12 +280,11 @@
 
                 </div>
 
-                <!-- about 2 -->
-                <div class="mx-auto overflow-hidden grid columns-1 lg:grid-cols-2">
+                <div class="about-2">
 
-                    <div class="flex flex-col h-full p-4 lg:p-16 justify-center ml-0 lg:ml-24">
+                    <div class="about-txt">            
 
-                        <svg class="w-12 h-12 text-blue-400 ml-6" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path
@@ -377,88 +296,63 @@
                             <path d="M12 17v-1" />
                         </svg>
 
-                        <h2 class="px-4 text-4xl font-bold my-4">
-                            Our advantages
-                        </h2>
+                        <h2>Our advantages</h2>                  
 
-                        <div class="px-4 text-md">
+                        <p>Aute dolore do ipsum reprehenderit eiusmod cupidatat. </p>
+                        <p>Laborum minim et dolor cillum aute minim.</p>
 
-                            <p>Aute dolore do ipsum reprehenderit eiusmod cupidatat. </p>
-                            <p>Laborum minim et dolor cillum aute minim.</p>
+                        <p>Qui irure mollit deserunt mollit culpa.</p>
+                        <p>Amet quis esse consectetur.</p>
 
-                            <p class="mt-4">Qui irure mollit deserunt mollit culpa.</p>
-                            <p>Amet quis esse consectetur.</p>
-
-                            <p class="mt-4">dolore anim ut velit ad adipisicing commodo.</p>
-                            <p>consequat eiusmod cupidatat esse reprehenderit irur.</p>
-
-                        </div>
+                        <p>dolore anim ut velit ad adipisicing commodo.</p>
+                        <p>consequat eiusmod cupidatat esse reprehenderit irur.</p>     
 
                     </div>
 
-                    <img class="grid w-full place-content-center scale-80" src="./images/app_2.webp" alt="" />
+                    <img src="./images/app_2.webp" alt="" />
 
                 </div>
-
-            </div>
 
         </section>
 
         <!--================= service ================-->
 
-        <section class="reveal bg-[#f8fcff] py-20" id="service">
+        <section class="reveal" id="service">
 
-            <div class="mx-auto max-w-6xl place-content-center">
+            <div class="service-wrap">
 
-                <div class="text-center mb-12 px-4">
-
-                    <h2 class="mb-4 font-bold text-4xl">Our services</h2>
-
-                    <h5 class="text-md tracking-wide">Commodo occaecat commodo sit commodo consectetur nostrud.</h5>
-
+                <div class="cards-label">
+                    <h2>Our services</h2>
+                    <h5>Commodo occaecat commodo sit commodo consectetur nostrud.</h5>
                 </div>
 
-                <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 sm:grid-cols-2">
+                <div class="cards-grid">
 
                     <!-- service 1 -->
-                    <div class="p-6 bg-white rounded-3xl">
+                    <div class="service-card">
 
-                        <span class="relative z-0 inline-flex mb-6 bg-violet-50 h-14 w-14"
-                            style="border-radius: 30% 70% 70% 30%/30% 30% 70% 70%">
+                        <div>
+                            <svg class="text-violet-500" viewBox="0 0 24 24">
+                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    color="currentColor">
+                                    <path
+                                        d="M19 20.5c.425-.191.79-.439 1.109-.76c1.391-1.402 1.391-3.658 1.391-8.17c0-4.511 0-6.767-1.391-8.168C18.717 2 16.479 2 12 2C7.522 2 5.282 2 3.891 3.402S2.5 7.059 2.5 11.57s0 6.767 1.391 8.169c.32.321.684.569 1.109.76M2.5 8.5h19M7 5.5h.009M11 5.5h.009" />
+                                    <path
+                                        d="M10.26 16.378c-1.08 0-1.543.78-1.663 1.26c-.12.479-.12 2.218-.048 2.938c.24.899.84 1.27 1.428 1.39c.54.049 2.82.03 3.48.03c.96.019 1.68-.341 1.98-1.42c.06-.36.12-2.34-.03-2.939c-.318-.96-1.047-1.259-1.647-1.259m-3.5 0h3.5m-3.5 0c0-.06-.002-.826 0-1.26c0-.398-.034-.78.156-1.13c.71-1.413 2.75-1.27 3.254.17c.087.237.093.612.09.96c-.003.442 0 1.26 0 1.26" />
+                                </g>
+                            </svg>
+                        </div>
 
-                            <div class="absolute bottom-0 right-0 -z-20 top-5 left-5">
-
-                                <svg class="w-10 h-10 text-blue-600" viewBox="0 0 24 24">
-                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="1.5" color="currentColor">
-                                        <path
-                                            d="M19 20.5c.425-.191.79-.439 1.109-.76c1.391-1.402 1.391-3.658 1.391-8.17c0-4.511 0-6.767-1.391-8.168C18.717 2 16.479 2 12 2C7.522 2 5.282 2 3.891 3.402S2.5 7.059 2.5 11.57s0 6.767 1.391 8.169c.32.321.684.569 1.109.76M2.5 8.5h19M7 5.5h.009M11 5.5h.009" />
-                                        <path
-                                            d="M10.26 16.378c-1.08 0-1.543.78-1.663 1.26c-.12.479-.12 2.218-.048 2.938c.24.899.84 1.27 1.428 1.39c.54.049 2.82.03 3.48.03c.96.019 1.68-.341 1.98-1.42c.06-.36.12-2.34-.03-2.939c-.318-.96-1.047-1.259-1.647-1.259m-3.5 0h3.5m-3.5 0c0-.06-.002-.826 0-1.26c0-.398-.034-.78.156-1.13c.71-1.413 2.75-1.27 3.254.17c.087.237.093.612.09.96c-.003.442 0 1.26 0 1.26" />
-                                    </g>
-                                </svg>
-
-                            </div>
-                        </span>
-
-                        <h5 class="mt-2 text-xl">
-                            Laborum voluptate cupidatat occaecat
-                        </h5>
-
-                        <p class="mt-2">
-                            Proident excepteur ea reprehenderit duis qui irure in.
-                        </p>
+                        <h5>Laborum voluptate cupidatat occaecat</h5>
+                        <p>Proident excepteur ea reprehenderit duis qui irure in.</p>
 
                     </div>
 
                     <!--  service 2 -->
-                    <div class="p-6 bg-white rounded-3xl">
+                    <div class="service-card">
 
-                        <span class="relative z-0 inline-flex mb-6 bg-red-50 h-14 w-14"
-                            style="border-radius: 30% 70% 70% 30%/30% 30% 70% 70%">
-                            <div class="absolute bottom-0 right-0 -z-20 top-5 left-5">
-
-                                <svg class="w-10 h-10 text-red-600" viewBox="0 0 24 24">
+                            <div>
+                                <svg class="text-red-500" viewBox="0 0 24 24">
                                     <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                         stroke-width="1.5" color="currentColor">
                                         <path
@@ -467,28 +361,18 @@
                                             d="M15.5 19.735a2.23 2.23 0 0 1-2.245 2.23c-1.236 0-2.255-.986-2.255-2.23a2.253 2.253 0 0 1 2.255-2.244c1.236 0 2.245 1 2.245 2.244m-.275-1.945l1.99-1.942m4.785 0l-1.627-1.54c-.773-.74-1.423-.094-1.747.182l-1.41 1.358m0 0l1.609 1.545" />
                                     </g>
                                 </svg>
+                            </div>         
 
-                            </div>
-                        </span>
-
-                        <h5 class="mt-2 text-xl">
-                            Magna reprehenderit Lorem
-                        </h5>
-
-                        <p class="mt-2">
-                            Veniam id culpa Lorem cupidatat fugiat.
-                        </p>
+                        <h5>Magna reprehenderit Lorem</h5>
+                        <p>Veniam id culpa Lorem cupidatat fugiat.</p>
 
                     </div>
 
                     <!-- service 3 -->
-                    <div class="p-6 bg-white rounded-3xl">
-
-                        <span class="relative z-0 inline-flex mb-6 bg-blue-50 h-14 w-14"
-                            style="border-radius: 30% 70% 70% 30%/30% 30% 70% 70%">
-                            <div class="absolute bottom-0 right-0 -z-20 top-5 left-5">
-
-                                <svg class="w-10 h-10 text-green-600" viewBox="0 0 24 24">
+                    <div class="service-card">
+               
+                            <div>
+                                <svg class="text-green-500" viewBox="0 0 24 24">
                                     <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                         stroke-width="1.5" color="currentColor">
                                         <path
@@ -497,58 +381,35 @@
                                             d="M7.5 9V6.5a4.5 4.5 0 0 1 9 0V9m-6.062 9.167v-5.334m1.562 0V11.5m0 8v-1.333M10.438 15.5h3.124m0 0c.518 0 .938.448.938 1v.667c0 .552-.42 1-.937 1H9.5m4.063-2.667c.517 0 .937-.448.937-1v-.667c0-.552-.42-1-.937-1H9.5" />
                                     </g>
                                 </svg>
+                            </div>                 
 
-                            </div>
-                        </span>
-
-                        <h5 class="mt-2 text-xl">
-                            Sint sint veniam culpa et
-                        </h5>
-
-                        <p class="mt-2">
-                            Amet voluptate sunt nostrud ut occaecat amet.
-                        </p>
+                        <h5>Sint sint veniam culpa et</h5>
+                        <p>Amet voluptate sunt nostrud ut occaecat amet.</p>
 
                     </div>
 
                     <!-- service  4 -->
-                    <div class="p-6 bg-white rounded-3xl">
+                    <div class="service-card">            
 
-                        <span class="relative z-0 inline-flex mb-6 bg-emerald-50 h-14 w-14"
-                            style="border-radius: 30% 70% 70% 30%/30% 30% 70% 70%">
-
-                            <div class="absolute bottom-0 right-0 -z-20 top-5 left-5">
-
-                                <svg class="w-10 h-10 text-sky-500" viewBox="0 0 24 24">
+                            <div>
+                                <svg class="text-sky-500" viewBox="0 0 24 24">
                                     <path fill="none" stroke="currentColor" stroke-linecap="round"
                                         stroke-linejoin="round" stroke-width="1.5"
                                         d="M12 17c.227 0 .438-.106.86-.318l3.39-1.704c1.5-.754 2.25-1.131 2.25-1.728v-7.5M12 17c-.227 0-.438-.106-.86-.318l-3.39-1.704c-1.5-.754-2.25-1.131-2.25-1.728v-7.5M12 17V9.5m6.5-3.75c0-.597-.75-.974-2.25-1.728l-3.39-1.704C12.438 2.106 12.227 2 12 2s-.438.106-.86.318L7.75 4.022C6.25 4.776 5.5 5.153 5.5 5.75m13 0c0 .597-.75.974-2.25 1.728l-3.39 1.704c-.422.212-.633.318-.86.318M5.5 5.75c0 .597.75.974 2.25 1.728l3.39 1.704c.422.212.633.318.86.318m-2 11.25c0-.69.56-1.25 1.25-1.25h1.5c.69 0 1.25.56 1.25 1.25m-4 0c0 .69.56 1.25 1.25 1.25h1.5c.69 0 1.25-.56 1.25-1.25m-4 0H5m9 0h5"
                                         color="currentColor" />
                                 </svg>
+                            </div>         
 
-                            </div>
-
-                        </span>
-
-                        <h5 class="mt-2 text-xl">
-                            Officia officia fugiat veniam
-                        </h5>
-
-                        <p class="mt-2">
-                            Ea amet minim magna minim aliqua pariatur magna.
-                        </p>
+                        <h5>Officia officia fugiat veniam</h5>
+                        <p>Ea amet minim magna minim aliqua pariatur magna.</p>
 
                     </div>
 
                     <!-- service  5 -->
-                    <div class="p-6 bg-white rounded-3xl">
+                    <div class="service-card">     
 
-                        <span class="relative z-0 inline-flex mb-6 bg-sky-50 h-14 w-14"
-                            style="border-radius: 30% 70% 70% 30%/30% 30% 70% 70%">
-
-                            <div class="absolute bottom-0 right-0 -z-20 top-5 left-5">
-
-                                <svg class="w-10 h-10 text-orange-500" viewBox="0 0 24 24">
+                            <div>
+                                <svg class="text-orange-500" viewBox="0 0 24 24">
                                     <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                         stroke-width="1.5" color="currentColor">
                                         <path
@@ -558,54 +419,34 @@
                                         <circle cx="15" cy="9" r="1" />
                                     </g>
                                 </svg>
+                            </div>    
 
-                            </div>
+                        <h5>Sit sunt ullamco et est</h5>
 
-                        </span>
-
-                        <h5 class="mt-2 text-xl">
-                            Sit sunt ullamco et est
-                        </h5>
-
-                        <p class="mt-2">
-                            Officia fugiat cupidatat deserunt nulla nulla aliqua sunt cillum est enim irure.
-                        </p>
+                        <p>Officia fugiat cupidatat deserunt nulla nulla aliqua sunt cillum est enim irure.</p>
 
                     </div>
 
                     <!--  service 6 -->
-                    <div class="p-6 bg-white rounded-3xl">
+                    <div class="service-card"> 
 
-                        <span class="relative z-0 inline-flex mb-6 bg-slate-100 h-14 w-14"
-                            style="border-radius: 30% 70% 70% 30%/30% 30% 70% 70%">
-
-                            <div class="absolute bottom-0 right-0 -z-20 top-5 left-5">
-
-                                <svg class="w-10 h-10 text-violet-600" viewBox="0 0 24 24">
-                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="1.5" color="currentColor">
+                            <div>
+                                <svg class="text-violet-500" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor">
                                         <path
                                             d="M12.034 3.747a2.2 2.2 0 0 0-.892-.234c-1.094-.04-1.942.802-3.637 2.489S4.96 8.532 5 9.619s.954 1.996 2.78 3.812l3.32 3.303c1.827 1.815 2.74 2.723 3.834 2.764s1.942-.803 3.638-2.49c1.367-1.36 2.183-2.17 2.427-3.005M3 12.504c.118 2.872 1.978 8.492 8.37 8.974c.376.028.564.042.618-.072s-.082-.246-.354-.51l-1.22-1.187" />
                                         <path
                                             d="M15.737 5.679V4.288c0-.206.008-.414.082-.606c.196-.51.715-1.18 1.66-1.18c.946 0 1.486.67 1.682 1.18c.074.192.082.4.082.606v1.39m-3.437 5.826h3.388c.997 0 1.806-.807 1.806-1.802V7.699c0-.995-.809-1.802-1.806-1.802h-3.388c-.997 0-1.806.807-1.806 1.802v2.003c0 .995.809 1.802 1.806 1.802" />
                                     </g>
                                 </svg>
-
                             </div>
 
-                        </span>
-
-                        <h5 class="mt-2 text-xl">
-                            Eu minim qui incididunt aute
-                        </h5>
-
-                        <p class="mt-2">
-                            Mollit et proident cillum aliqua consequat eiusmod eu magna ut minim mollit.
-                        </p>
+                        <h5>Eu minim qui incididunt aute</h5>
+                        <p>Mollit et proident cillum aliqua consequat eiusmod eu magna ut minim mollit.</p>
 
                     </div>
-
                 </div>
+
 
             </div>
 
@@ -613,175 +454,116 @@
 
         <!--================= news ================-->
 
-        <section class="reveal py-20 px-4" id="news">
+        <section class="reveal" id="news">  
 
-            <div class="mx-auto max-w-6xl place-content-center">
+                <div class="cards-label">
 
-                <div class="text-center mb-12 px-4">
-
-                    <h2 class="mb-4 font-bold text-4xl">News</h2>
-
-                    <h5 class="text-md tracking-wide">Irure est occaecat laborum laboris do elit nostrud est.</h5>
+                    <h2>News</h2>
+                    <h5>Irure est occaecat laborum laboris do elit nostrud est.</h5>
 
                 </div>
 
-                <!-- card grid -->
-
-                <div class="grid lg:grid-cols-2 lg:gap-y-16 gap-12">
+                <div class="news-grid">  
 
                     <!-- card 1 -->
-                    <div class="grid grid-cols-[40%_60%] gap-4">
+                    <div class="news-card">
+     
+                        <img class="" src="./images/news_1.webp" alt="">  
 
-                        <div class="overflow-hidden">
-                            <img class="object-cover rounded-xl h-40" src="./images/news_1.webp" alt="">
-                        </div>
-
-                        <div class="w-full p-2 place-content-center">
-
-                            <h3 class="text-lg font-bold leading-none">Reprehenderit ipsum.</h3>
-
-                            <p class="mt-3">
-                                Mollit enim laboris deserunt dolor irure dolore amet. Ipsum officia enim enim esse eu.
-                            </p>
-
+                        <div>
+                            <h3>Reprehenderit ipsum.</h3>
+                            <p>Mollit enim laboris deserunt dolor irure dolore amet. Ipsum officia enim enim esse eu.</p>
                         </div>
 
                     </div>
 
                     <!-- card 2 -->
-                    <div class="grid grid-cols-[40%_60%] gap-4">
+                    <div class="news-card">
+   
+                        <img src="./images/news_2.webp" alt="">           
 
-                        <div class="overflow-hidden">
-                            <img class="object-cover rounded-xl h-40" src="./images/news_2.webp" alt="">
-                        </div>
-
-                        <div class="w-full p-2 place-content-center">
-
-                            <h3 class="text-lg font-bold leading-none">Denim deserunt</h3>
-
-                            <p class="mt-3">
-                                Reprehenderit sint officia nisi minim minim velit consectetur in deserunt non cupidatat
-                                voluptate.
-                            </p>
-
+                        <div>
+                            <h3>Denim deserunt</h3>
+                            <p>Reprehenderit sint officia nisi minim minim velit consectetur in deserunt non cupidatat voluptate.</p>
                         </div>
 
                     </div>
 
                     <!-- card 3 -->
-                    <div class="grid grid-cols-[40%_60%] gap-4">
+                    <div class="news-card">
+      
+                        <img src="./images/news_3.webp" alt="">  
 
-                        <div class="overflow-hidden">
-                            <img class="object-cover rounded-xl h-40" src="./images/news_3.webp" alt="">
-                        </div>
-
-                        <div class="w-full p-2 place-content-center">
-
-                            <h3 class="text-lg font-bold leading-none">Mollit laboris dolor</h3>
-
-                            <p class="mt-3">
-                                Adipisicing commodo enim aliqua dolor id laborum. Dolor duis non amet culpa anim.
-                            </p>
-
+                        <div>
+                          <h3>Mollit laboris dolor</h3>
+                          <p>Adipisicing commodo enim aliqua dolor id laborum. Dolor duis non amet culpa anim.</p>
                         </div>
 
                     </div>
 
                     <!-- card 4 -->
-                    <div class="grid grid-cols-[40%_60%] gap-4">
+                    <div class="news-card">
 
-                        <div class="overflow-hidden">
-                            <img class="object-cover rounded-xl h-40" src="./images/news_4.webp" alt="">
-                        </div>
+                        <img src="./images/news_4.webp" alt="">
 
-                        <div class="w-full p-2 place-content-center">
-
-                            <h3 class="text-lg font-bold leading-none">Qui quis dolor</h3>
-
-                            <p class="mt-3">
-                                Nisi in fugiat ut ad ut in nisi nisi amet sint. Ipsum officia enim enim esse eu.
-                            </p>
-
+                        <div>
+                            <h3>Qui quis dolor</h3>
+                            <p>Nisi in fugiat ut ad ut in nisi nisi amet sint. Ipsum officia enim enim esse eu.</p>
                         </div>
 
                     </div>
 
                     <!-- card 5 -->
-                    <div class="grid grid-cols-[40%_60%] gap-4">
+                    <div class="news-card">
 
-                        <div class="overflow-hidden">
-                            <img class="object-cover rounded-xl h-40" src="./images/news_5.webp" alt="">
-                        </div>
+                        <img src="./images/news_5.webp" alt="">   
 
-                        <div class="w-full p-2 place-content-center">
-
-                            <h3 class="text-lg font-bold leading-none">Sunt consectetur</h3>
-
-                            <p class="mt-3">
-                                Consectetur consequat eu ea reprehenderit veniam fugiat aute mollit anim. Eu et
-                                consequat id minim incididunt.
-                            </p>
-
+                        <div>
+                            <h3>Sunt consectetur</h3>
+                            <p>Consectetur consequat eu ea reprehenderit veniam fugiat aute mollit anim. Eu et consequat id minim incididunt.</p>
                         </div>
 
                     </div>
 
                     <!-- card 6 -->
-                    <div class="grid grid-cols-[40%_60%] gap-4">
+                    <div class="news-card">
+      
+                        <img src="./images/news_6.webp" alt=""> 
 
-                        <div class="overflow-hidden">
-                            <img class="object-cover rounded-xl h-40" src="./images/news_6.webp" alt="">
-                        </div>
-
-                        <div class="w-full p-2 place-content-center">
-
-                            <h3 class="text-lg font-bold leading-none">Elit dolore labore</h3>
-
-                            <p class="mt-3">
-                                Duis do aute consequat sint. Ea aliqua minim voluptate mollit consectetur laboris.
-                                Ullamco esse.
-                            </p>
-
+                        <div>
+                            <h3>Elit dolore labore</h3>
+                            <p>Duis do aute consequat sint. Ea aliqua minim voluptate mollit consectetur laboris. Ullamco esse.</p>
                         </div>
 
                     </div>
 
-                </div>
-
-            </div>
+                </div> 
 
         </section>
 
         <!--================= map ================-->
 
-        <section class="reveal bg-[#f8fcff] pt-20">
+        <section class="reveal map-wrap">
 
-            <div class="mx-auto max-w-7xl">
+            <div class="cards-label">
 
-                <div class="text-center px-4">
-
-                    <h2 class="mb-4 font-bold text-4xl">Crypto Map</h2>
-
-                    <h5 class="text-md tracking-wide">Eu cupidatat culpa proident dolor irure.</h5>
-
-                </div>
+                <h2>Crypto Map</h2>
+                <h5>Eu cupidatat culpa proident dolor irure.</h5>
 
             </div>
 
-            <div class="mx-auto max-w-4xl mt-10">
+            <div class="map">
 
-                <div class="w-full h-11 rounded-t-lg bg-gray-200 flex justify-start items-center space-x-1.5 px-3">
-                    <span class="w-3 h-3 rounded-full bg-red-400"></span>
-                    <span class="w-3 h-3 rounded-full bg-yellow-400"></span>
-                    <span class="w-3 h-3 rounded-full bg-green-400"></span>
+                <div class="map-browser">
+                    <span class="bg-red-400"></span>
+                    <span class="bg-yellow-400"></span>
+                    <span class="bg-green-400"></span>
                 </div>
 
-                <div class="bg-gray-50 border-t-0 w-full h-96">
+                <div class="map-frame">
 
                     <!-- google map -->
-                    <iframe class="w-full h-full overflow-hidden"
-                        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6030.418742494061!2d-111.34563870463673!3d26.01036670629853!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1471908546569"
-                        frameborder="0"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6030.418742494061!2d-111.34563870463673!3d26.01036670629853!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1471908546569" frameborder="0"></iframe>
 
                 </div>
 
@@ -793,122 +575,93 @@
 
     <!--================= footer ================-->
 
-    <footer class="w-full border-t border-solid border-gray-100 py-20 px-4 mb-6" id="contact">
+    <footer id="contact">
 
-        <div class="mx-auto max-w-7xl flex flex-row flex-wrap lg:gap-x-6 gap-4 justify-between">
+        <div class="foot-wrap">
 
-            <!-- 1 -->
-            <div class="w-full lg:w-[40%] lg:flex-1 justify-items-center p-4">
+            <!-- foot 1 -->
+            <div class="foot-brand">              
 
-                <div class="flex flex-row items-center shrink-0">
+                <div class="foot-logo">                         
+                
+                        <svg viewBox="0 0 24 24">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M6.266 2h11.468c.66 0 1.756.098 2.128 1.152c.222.628.135 1.333.376 1.953c.253.652.65 1.281 1.036 1.849c.382.562.822 1.17.707 1.84c-.13.756-.735 1.467-1.536 1.845c-1.64.774-4.064.308-4.45-2.493c-.323.894-1.315 2.8-4.034 2.8c-2.72 0-3.633-1.906-3.956-2.8c-.386 2.8-2.81 3.267-4.45 2.493c-.8-.378-1.407-1.09-1.536-1.845c-.115-.67.325-1.278.707-1.84c.385-.568.783-1.197 1.036-1.849c.242-.62.154-1.325.376-1.953C4.51 2.098 5.605 2 6.266 2m10.697 18.665v-5.342m1.563 0v-1.336m0 8.013v-1.335m-1.563-2.671h3.126m0 0c.518 0 .938.448.938 1.001v.668c0 .553-.42 1.002-.938 1.002h-4.064m4.064-2.671c.518 0 .938-.449.938-1.002v-.668c0-.553-.42-1.001-.938-1.001h-4.064M3.02 10.481v4.508c0 2.832 0 4.249.879 5.129c.88.88 2.294.88 5.123.88h4.002"
+                                color="currentColor" />
+                        </svg>
 
-                    <svg class="w-9 h-9 text-red-500" viewBox="0 0 24 24">
-                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="1.5"
-                            d="M6.266 2h11.468c.66 0 1.756.098 2.128 1.152c.222.628.135 1.333.376 1.953c.253.652.65 1.281 1.036 1.849c.382.562.822 1.17.707 1.84c-.13.756-.735 1.467-1.536 1.845c-1.64.774-4.064.308-4.45-2.493c-.323.894-1.315 2.8-4.034 2.8c-2.72 0-3.633-1.906-3.956-2.8c-.386 2.8-2.81 3.267-4.45 2.493c-.8-.378-1.407-1.09-1.536-1.845c-.115-.67.325-1.278.707-1.84c.385-.568.783-1.197 1.036-1.849c.242-.62.154-1.325.376-1.953C4.51 2.098 5.605 2 6.266 2m10.697 18.665v-5.342m1.563 0v-1.336m0 8.013v-1.335m-1.563-2.671h3.126m0 0c.518 0 .938.448.938 1.001v.668c0 .553-.42 1.002-.938 1.002h-4.064m4.064-2.671c.518 0 .938-.449.938-1.002v-.668c0-.553-.42-1.001-.938-1.001h-4.064M3.02 10.481v4.508c0 2.832 0 4.249.879 5.129c.88.88 2.294.88 5.123.88h4.002"
-                            color="currentColor" />
-                    </svg>
-
-                    <a class="px-1 text-xl font-bold text-red-500" href="https://snoo.vercel.app/">CryptoSnoo</a>
-
+                     <a href="https://snookee.vercel.app/">CryptoSnoo</a>
+                
                 </div>
 
-                <div class="flex text-sm mt-2">
-
-                    ©
-                    <script>document.write(new Date().getFullYear());</script>
-
-                    by
-
-                    <a class="flex items-center ml-1 uppercase hover:text-red-500 hover:font-bold"
-                        href="https://github.com/yojeero" target="_blank">
-
-                        yojee
-                    </a>
-
+                <div class="copyright"> © 
+                    <script>document.write(new Date().getFullYear());</script> by 
+                    <a href="https://github.com/yojeero" target="_blank">yojee</a>
                 </div>
 
             </div>
 
-            <!-- 2 -->
-            <div class="w-[40%] lg:w-[15%] p-4 flex-1">
+            <!-- foot 2 -->
+            <div class="foot-column">
 
-                <p class="text-sm">Links</p>
+                <p>Links</p>
 
-                <ul class="mt-3 space-y-3 text-xs uppercase">
-
-                    <li><a href="#" class="hover:text-red-500 hover:font-bold">home</a></li>
-                    <li><a href="#about" class="hover:text-red-500 hover:font-bold">about</a></li>
-                    <li><a href="#service" class="hover:text-red-500 hover:font-bold">services</a></li>
-                    <li><a href="#news" class="hover:text-red-500 hover:font-bold">news</a></li>
-
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#service">services</a></li>
+                    <li><a href="#news">news</a></li>
                 </ul>
 
             </div>
 
-            <!-- 3 -->
-            <div class="w-[40%] lg:w-[15%] p-4 flex-1">
+            <!-- foot 3 -->
+            <div class="foot-column">
 
-                <p class="text-sm">Work time</p>
+                <p>Work time</p>
 
-                <dl class="mt-3 space-y-3 text-xs uppercase">
-                    <dt>
-                        Mon, Tue, Wed, Thu, PT, Sat
-                    </dt>
-                    <dd class="font-bold">
-                        8:00 - 20:00
-                    </dd>
+                <dl>
+                    <dt>Mon, Tue, Wed, Thu, PT, Sat</dt>
+                    <dd>8:00 - 20:00</dd>
                 </dl>
 
-                <dl class="mt-3 space-y-3 text-xs uppercase">
-                    <dt>
-                        Sunday
-                    </dt>
-                    <dd class="font-bold">
-                        Day off
-                    </dd>
+                <dl>
+                    <dt>Sunday</dt>
+                    <dd>Day off</dd>
                 </dl>
 
             </div>
 
-            <!-- 4 -->
-            <div class="w-[40%] lg:w-[15%] p-4 flex-1">
+            <!-- foot 4 -->
+            <div class="foot-column">
 
-                <p class="text-sm">Contact</p>
+                <p>Contact</p>
 
-                <div class="mt-3 space-y-3 text-xs uppercase">
-
-                    <p class="text-md font-bold">Snoo Bank</p>
-
-                    <p class="text-md text-red-500 font-bold">(+0) 111 222 33 44</p>
-
-                    <p class="text-md text-red-500 font-bold">
-                        <a class="hover:text-black"
+                <div>
+                    <p>Snoo Bank</p>
+                    <p>(+0) 111 222 33 44</p>
+                    <p><a class="hover:text-black"
                             onClick="javascript:window.open('mailto:your@email.com', 'Mail'); event.preventDefault()"
                             href="mailto:your@email.com?Subject=Hi%20Snoo%20Poe'">
-
                             snoo@snoo.bank
                         </a>
                     </p>
-
-
                 </div>
 
             </div>
 
-            <!-- 5 -->
-            <div class="w-[40%] lg:w-[15%] p-4 flex-1">
+            <!-- foot 5 -->
+            <div class="foot-column">
 
-                <p class="text-sm">Follow Us</p>
+                <p>Follow Us</p>
 
-                <div class="mt-3 flex flex-row gap-x-3">
+                <div class="foot-social">
 
                     <!-- twitter -->
                     <a href="https://x.com/" target="_blank">
 
-                        <svg class="w-6 h-6 text-slate-500 hover:text-red-500" viewBox="0 0 24 24">
-                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="1.5" color="currentColor">
+                        <svg viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor">
                                 <path
                                     d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12.001 2.5c4.478 0 6.717 0 8.108 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.717 0-8.109-1.391c-1.39-1.392-1.39-3.63-1.39-8.109" />
                                 <path
@@ -921,9 +674,8 @@
                     <!-- facebook -->
                     <a href="https://facebook.com/" target="_blank">
 
-                        <svg class="w-6 h-6 text-slate-500 hover:text-red-500" viewBox="0 0 24 24">
-                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="1.5" color="currentColor">
+                        <svg viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor">
                                 <path
                                     d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12" />
                                 <path
@@ -936,9 +688,8 @@
                     <!-- instagram -->
                     <a href="https://instagram.com/" target="_blank">
 
-                        <svg class="w-6 h-6 text-slate-500 hover:text-red-500" viewBox="0 0 24 24">
-                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="1.5" color="currentColor">
+                        <svg viewBox="0 0 24 24">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor">
                                 <path
                                     d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12" />
                                 <path d="M16.5 12a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m1.008-5.5h-.01" />
@@ -955,24 +706,26 @@
 
     </footer>
 
-    <!-- ALL JS -->
+<!-- JS -->
 
-    <script src="js/scrollreveal.min.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/visiters-counter.js"></script>
-    <script src="js/yandex-map.js"></script>
-    <script src="js/up.min.js"></script>
+  <!-- loader hide -->
+  <script>
+  window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+    if (!loader) return;
 
-    <!-- LOADER HIDE -->
-    <script>
-        window.addEventListener("load", () => {
-            const loader = document.querySelector(".loader");
-            if (!loader) return;
-            loader.classList.add("opacity-0");
-            setTimeout(() => loader.remove(), 300);
-        });
-    </script>
+    document.body.classList.remove("loading");
+    loader.classList.add("opacity-0");
+
+    setTimeout(() => loader.remove(), 300);
+  });
+  </script> 
+
+    <script src="./js/scrollreveal.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/visiters-counter.js"></script>
+    <script src="./js/yandex-map.js"></script>
+    <script src="./js/up.min.js"></script>
 
 </body>
-
 </html>
