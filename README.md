@@ -1,4 +1,4 @@
-<img src="preview/preview.jpg" width="830">   
+<img src="preview/snoo.jpg" width="100%" max-width="800px">   
 
 ### [Snoo](https://snookee.vercel.app/) is a modern, responsive landing page template built with Tailwind, designed for crypto exchanges, fintech startups, digital banks, and blockchain-related services.    
 

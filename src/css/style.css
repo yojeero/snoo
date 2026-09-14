@@ -1,0 +1,924 @@
+/* prettier-ignore-file */
+@import "tailwindcss";
+
+@layer base {
+
+body {
+  @apply 
+    bg-white
+
+    text-slate-700 
+  ;
+
+  font-family: 'JetBrains Mono', system-ui, sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+    font-family: 'Cormorant Infant', system-ui, sans-serif;
+    font-weight: 600;
+}
+
+button {
+  @apply 
+    focus-visible:outline-none focus-visible:ring-2
+  ;
+}
+
+}
+
+@layer components {
+
+body.loading {  
+  @apply 
+    overflow-hidden
+  ;
+}
+
+.loader {
+  @apply 
+    fixed inset-0
+
+    flex items-center justify-center
+
+    bg-blue-50
+
+    z-50
+  ;
+}
+
+.loader-spinner {
+  @apply 
+    w-16 h-16
+
+    border-8 border-gray-200 border-t-red-600 
+
+    rounded-full
+    
+    animate-spin
+  ;
+}
+
+main {
+  @apply 
+    w-full mx-auto
+
+    overflow-x-hidden
+  ;
+}
+
+header {
+  @apply 
+    w-full max-w-7xl    
+
+    flex items-center justify-between
+    
+    border-b border-solid border-gray-100 
+       
+    mx-auto 
+
+    px-4 py-6 
+  ;
+}
+
+.logo {
+  @apply 
+    flex flex-row items-center 
+
+    ml-2
+  ;
+}
+
+.logo a {
+  @apply 
+    flex
+
+    text-xl font-bold text-red-600 
+
+    hover:text-blue-500
+  ;
+
+  font-family: 'Cormorant Infant', system-ui, sans-serif;
+}
+
+.logo svg {
+  @apply 
+    w-8 h-8 
+     
+    text-red-500
+
+    hover:text-blue-500
+
+    mr-2
+  ;
+}
+
+.top-nav {
+  @apply 
+    hidden 
+    uppercase
+
+    md:flex md:justify-center md:items-center 
+
+    text-xs font-semibold
+
+    hover:text-red-500
+
+    space-x-10  
+  ;
+}
+
+.top-phone svg, 
+.top-chat svg, 
+.top-visite svg {
+  @apply 
+    w-5 h-5 
+
+    text-gray-800 hover:text-red-500 
+
+    mr-2 
+  ;
+}
+
+.top-phone,
+.top-chat,
+.top-visite {
+  @apply 
+    flex items-center  
+  ;
+}
+
+.top-phone {
+  @apply 
+    text-sm
+  ;
+}
+
+.top-visite span {
+  @apply     
+    mr-1
+  ;
+}
+
+#menu {
+  @apply     
+    flex 
+    
+    cursor-pointer
+  ;
+}
+
+#menu svg {
+  @apply     
+    h-9 w-9 
+    
+    flex  
+
+    text-black
+
+    bg-transparent 
+
+    cursor-pointer    
+    
+    pr-4 
+  ;
+}
+
+#close-nav svg {
+  @apply     
+    absolute top-8 right-16 
+    
+    w-6 h-6
+
+    text-black
+
+    cursor-pointer 
+    
+    z-50 
+  ;
+}
+
+#nav-content {
+  @apply 
+    fixed top-0 right-0 
+    
+    h-full w-full
+
+    bg-blue-50
+
+    translate-x-full transition-transform duration-300
+
+    z-40
+  ;
+}
+
+#nav-content.open {
+  @apply 
+    translate-x-0 lg:translate-x-1/2
+  ;
+}
+
+#nav-overlay {
+  @apply 
+    fixed inset-0
+
+    bg-white/70
+
+    opacity-0
+
+    pointer-events-none
+
+    transition-opacity duration-300
+
+    z-30
+  ;
+}
+
+#nav-overlay.active {
+  @apply 
+    opacity-100
+    pointer-events-auto
+  ;
+}
+
+.nav {
+  @apply     
+    h-full w-full 
+    
+    grid auto-cols-max content-center justify-start
+
+    transition duration-500
+
+    ml-8 lg:ml-16              
+  ;
+}
+
+.nav li a {
+  @apply     
+    text-xl text-slate-600 
+
+    hover:text-red-600
+    
+    leading-[1.8]
+  ;
+}
+
+.nav li.li-brand {
+  @apply     
+    text-2xl font-semibold text-red-600
+
+    mb-8                 
+  ;
+
+  font-family: 'Cormorant Infant', system-ui, sans-serif;
+}
+
+.nav li.last {
+  @apply     
+    flex 
+    
+    pt-20               
+  ;
+
+  font-family: 'Cormorant Infant', system-ui, sans-serif;
+}
+
+.top-wrap {
+  @apply 
+    w-full      
+
+    bg-linear-to-b from-[#f9fcff] to-[#eef5fb]
+  ;
+}
+
+.top-bg {
+  @apply 
+    w-full lg:max-w-6xl    
+
+    grid grid-cols-1 lg:grid-cols-2
+
+    mx-auto
+  ;
+}
+
+.head-text {
+  @apply 
+    flex flex-col justify-center
+
+    text-center lg:text-left    
+
+    py-12 px-4 lg:py-32 
+    gap-8 
+  ;
+}
+
+.head-about {
+  @apply 
+    w-full 
+
+    mx-auto 
+  ;
+}
+
+.head-about h1 {
+  @apply 
+    text-5xl capitalize
+  ;
+}
+
+.head-about h2 {
+  @apply      
+    text-4xl 
+     
+    ml-2
+  ;
+}
+
+.head-offer {
+  @apply 
+    lg:flex lg:items-center
+    
+    mt-6 ml-2 lg:mt-14 
+  ;
+}
+
+.head-offer div {
+  @apply 
+    flex justify-center lg:justify-start
+    shrink-0 
+    -space-x-4 
+    
+    overflow-hidden 
+  ;
+}
+
+.head-offer div img {
+  @apply 
+    inline-block  
+    
+    w-14 h-14
+    
+    rounded-full 
+
+    ring-2 ring-white
+  ;
+}
+
+.head-offer p {
+  @apply 
+    text-base
+  
+    mt-4 lg:mt-0 lg:ml-4
+  ;
+}
+
+.head-offer span {
+  @apply 
+    font-bold
+  ;
+}
+
+.head-chat {
+  @apply 
+     flex items-center justify-center lg:justify-start 
+     
+     space-x-3 
+  ;
+}
+
+.btn {
+  @apply 
+    inline-flex items-center justify-center 
+
+    text-sm font-medium text-white    
+     
+    rounded-sm    
+     
+    bg-red-500   
+
+    shadow-lg       
+    
+    transition-all duration-200  
+     
+    cursor-pointer    
+
+    hover:bg-red-600
+    
+    px-8 py-3
+  ;
+}
+
+.btn svg {
+  @apply 
+    w-6 h-6 
+
+    ml-2
+  ;
+}
+
+svg.social  {
+  @apply 
+    w-6 h-6 
+
+    text-slate-500 
+
+    hover:text-red-500
+
+    ml-0
+  ;
+}
+
+.head-pic {
+  @apply 
+    hidden 
+    h-full 
+    lg:flex items-center justify-center
+  ;
+}
+
+.head-pic img {
+  @apply     
+    w-80 h-80 aspect-square
+
+    rounded-full 
+
+    object-cover
+  ;
+}
+
+.brands {
+  @apply 
+    w-full h-20
+  
+    flex flex-row flex-wrap items-center justify-center 
+    
+    overflow-hidden
+
+    gap-12 my-12   
+  ;
+}
+
+.brands img {
+  @apply 
+    h-12.5 
+    
+    object-cover
+  ;
+}
+
+#about {
+  @apply 
+    w-full 
+
+    mx-auto 
+
+    bg-blue-100/70
+    
+    py-12 lg:py-16
+  ;
+}
+
+.about-1,
+.about-2 {
+  @apply 
+     w-full max-w-7xl 
+     
+     grid grid-cols-1 lg:grid-cols-2
+     
+     mx-auto 
+     
+     overflow-hidden  
+  ;
+}
+
+.about-1 img,
+.about-2 img {
+  @apply     
+    hidden lg:flex
+
+    h-[80%]
+
+    self-center
+
+    object-cover
+  ;
+}
+
+.about-txt {
+  @apply 
+    h-full 
+    
+    flex flex-col  justify-center  
+
+    p-4 lg:p-16  
+  ;
+}
+
+.about-txt svg {
+  @apply 
+    w-12 h-12 
+    
+    text-red-600 
+    
+    ml-6 
+  ;
+}
+
+.about-txt h2 {
+  @apply 
+    text-4xl font-semibold     
+    
+    px-4 my-4 
+  ;
+}
+
+.about-txt p {
+  @apply 
+    text-base 
+    
+    mt-4 ml-1 
+  ;
+}
+
+#service {
+  @apply 
+    w-full     
+
+    bg-blue-50   
+  ;
+}
+
+.service-wrap {
+  @apply     
+    max-w-6xl     
+    
+    place-content-center  
+
+    mx-auto  
+    
+    py-12 px-4 lg:py-32
+  ;
+}
+
+.cards-label {
+  @apply   
+    text-center 
+    
+    mb-12 px-4
+  ;
+}
+
+.cards-label h2 {
+  @apply   
+    text-4xl font-semibold 
+  
+    mb-4 
+  ;
+}
+
+.cards-label h5 {
+  @apply   
+    text-base tracking-wide
+  ;
+}
+
+.cards-grid {
+  @apply   
+    grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3
+
+    gap-4  
+  ;
+}
+
+.service-card {
+  @apply   
+    rounded-2xl 
+
+    bg-white 
+
+    shadow-lg shadow-blue-400/10
+
+    overflow-hidden
+     
+    p-6 
+  ;
+}
+
+.service-card div {
+  @apply   
+    relative 
+
+    h-14 w-14
+
+    inline-flex 
+    
+    rounded-[30%_70%_70%_30%/30%_30%_70%_70%]
+
+    bg-blue-50
+
+    mb-6 
+
+    z-0  
+  ;  
+}
+
+.service-card svg {
+  @apply 
+    absolute bottom-0 right-0 top-5 left-5    
+    
+    w-10 h-10
+  ;  
+}
+
+.service-card h5 {
+  @apply    
+    text-lg  
+    
+    mt-2 
+  ;  
+}
+
+.service-card p {
+  @apply   
+    text-sm 
+
+    mt-2 
+  ;  
+}
+
+#news {
+  @apply    
+    max-w-6xl 
+
+    place-content-center   
+      
+    mx-auto 
+
+    py-12 px-8 lg:py-32
+  ;  
+}
+
+.news-grid {
+  @apply   
+    grid lg:grid-cols-2 lg:gap-y-16  
+
+    gap-8  
+  ;
+}
+
+.news-card {
+  @apply   
+    grid grid-cols-1 sm:grid-cols-[1fr_1fr]
+    
+    gap-4
+  ;
+}
+
+.news-card img {
+  @apply   
+    h-40 aspect-video
+    
+    object-cover 
+
+    rounded-2xl  
+  ;
+}
+
+.news-card div {
+  @apply   
+    w-full 
+
+    place-content-center 
+    
+    p-2 
+  ;
+}
+
+.news-card h3 {
+  @apply   
+    text-lg font-bold leading-none  
+  ;
+}
+
+.news-card p {
+  @apply 
+    text-sm
+
+    mt-3
+  ;
+}
+
+.map-wrap {
+  @apply   
+    bg-blue-50/80
+
+    pt-12
+
+    lg:pt-32
+  ;
+}
+
+.map {
+  @apply   
+    max-w-4xl mx-auto 
+    
+    mt-12
+  ;
+}
+
+.map-browser {
+  @apply  
+    hidden 
+    w-full h-11 
+
+    lg:flex justify-start items-center 
+
+    rounded-t-lg
+    ring ring-white 
+
+    bg-blue-50 
+     
+    space-x-1.5 
+     
+    px-4
+  ;
+}
+
+.map-browser span {
+  @apply   
+    w-3 h-3 
+     
+    rounded-full 
+  ;
+}
+
+.map-frame {
+  @apply   
+    w-full h-96 
+    
+    border-t-0
+    ring ring-white 
+  ;
+}
+
+iframe {
+  @apply   
+    w-full h-full 
+    
+    overflow-hidden
+  ;
+}
+
+footer {
+  @apply   
+    w-full 
+
+    bg-linear-to-b from-[#f9fcff] to-[#eef5fb]
+    
+    py-12 px-4 lg:py-32 
+  ;
+}
+
+.foot-wrap {
+  @apply    
+    max-w-7xl 
+    
+    flex flex-row flex-wrap justify-between
+
+    mx-auto 
+    
+    lg:gap-x-6 
+    
+    gap-4 
+  ;
+}
+
+.foot-brand {
+  @apply    
+    w-full lg:w-[40%] lg:flex-1 
+
+    justify-items-center    
+    
+    cursor-pointer
+     
+    p-4 
+  ;
+}
+
+.foot-logo {
+  @apply    
+    flex items-center shrink-0
+
+    text-lg font-bold text-blue-600 hover:text-red-500
+
+    px-1  
+  ;
+
+  font-family: 'Cormorant Infant', system-ui, sans-serif;
+}
+
+.foot-logo svg {
+  @apply    
+    w-9 h-9 
+    
+    text-blue-500/70
+
+    hover:text-red-500
+
+    mr-1
+  ;
+}
+
+.copyright {
+  @apply    
+    flex 
+
+    text-sm
+
+    mt-2
+  ;
+}
+
+footer a {
+  @apply 
+    flex items-center 
+
+    capitalize text-blue-500/80 font-semibold hover:text-red-600
+
+    ml-1
+  ;
+}
+
+.foot-column {
+  @apply    
+    w-[40%] 
+      
+    flex-1
+      
+    lg:w-[15%] 
+      
+    p-4  
+  ;
+}
+
+.foot-column p {
+  @apply    
+    text-sm font-semibold
+  ;
+}
+
+.foot-column ul, 
+.foot-column dl,
+.foot-column div {
+  @apply    
+    text-sm uppercase 
+    
+    space-y-3 
+    
+    mt-3 
+  ;
+}
+
+.foot-column dd {
+  @apply    
+    font-semibold 
+  ;
+}
+
+.foot-column h5 {
+  @apply 
+    text-red-600
+  ;
+}
+
+.foot-social {
+  @apply   
+    flex flex-row  
+    
+    gap-x-3 mt-3
+  ;
+}
+
+.foot-social a {
+  @apply 
+    h-6 w-6
+
+    flex items-center justify-center
+  ;
+}
+
+.foot-social svg {
+  @apply 
+    h-6 w-6
+
+    text-slate-400 
+    
+    hover:text-red-500
+  ;
+}
+
+}
