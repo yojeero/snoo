@@ -2,8 +2,8 @@
 
 <img src="https://img.shields.io/badge/Snoo-7678ed?style=for-the-badge" width="40%" alt="Snoo">   
 
-> Snoo - Just fork the project and customize it.    
-  
+> [!NOTE]
+> Features 🧼    
 
 - News Section   
 - Mobile-friendly   
