@@ -18,4 +18,15 @@
 #### Tech Stack   
 ```
 Bun | Vite | Tailwind CSS | Vanilla JS   
-```
+```   
+
+## Commands
+
+All commands are run from the root of the project:
+
+| Command           | Action                                          |
+| :---------------- | :---------------------------------------------- |
+| `bun install`     | Installs dependencies                           |
+| `bun run dev`     | Starts local dev server at `localhost:4321`     |
+| `bun run build`   | Builds the production site to `./dist/`         |
+| `bun run preview` | Previews the build locally                      |
