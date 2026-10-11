@@ -1,732 +1,840 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
 
-<head>
+    <title>Snoo - Crypto Tailwind Bank</title>
 
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-
-    <title>Snoo - Tailwind CSS Template</title>
-
-    <meta content="Crypto Tailwind template" name="description" />
+    <meta content="Crypto Tailwind Bank template" name="description">
     <link rel="icon" type="./image/svg+xml" href="./images/fav.svg">
 
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <script type="module">
+    import "/src/css/style.css";
+    </script>
+  </head>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
-
-<!-- CSS -->
-  <script type="module">
-    import "/src/css/style.css"
-  </script>
-
-</head>
-
-<body class="loading">
-
-  <div class="loader">
-    <div class="loader-spinner"></div>
-  </div>
-
+  <body>
     <main>
+      <header>
+        <div class="logo">
+          <a href="https://snookee.vercel.app/" target="_blank">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M6.266 2h11.468c.66 0 1.756.098 2.128 1.152c.222.628.135 1.333.376 1.953c.253.652.65 1.281 1.036 1.849c.382.562.822 1.17.707 1.84c-.13.756-.735 1.467-1.536 1.845c-1.64.774-4.064.308-4.45-2.493c-.323.894-1.315 2.8-4.034 2.8c-2.72 0-3.633-1.906-3.956-2.8c-.386 2.8-2.81 3.267-4.45 2.493c-.8-.378-1.407-1.09-1.536-1.845c-.115-.67.325-1.278.707-1.84c.385-.568.783-1.197 1.036-1.849c.242-.62.154-1.325.376-1.953C4.51 2.098 5.605 2 6.266 2m10.697 18.665v-5.342m1.563 0v-1.336m0 8.013v-1.335m-1.563-2.671h3.126m0 0c.518 0 .938.448.938 1.001v.668c0 .553-.42 1.002-.938 1.002h-4.064m4.064-2.671c.518 0 .938-.449.938-1.002v-.668c0-.553-.42-1.001-.938-1.001h-4.064M3.02 10.481v4.508c0 2.832 0 4.249.879 5.129c.88.88 2.294.88 5.123.88h4.002"
+                color="currentColor"
+              />
+            </svg>
 
-        <header>     
+            CryptoSnoo
+          </a>
+        </div>
 
-            <div class="logo">      
-                
-                <a href="https://snookee.vercel.app/" target="_blank">
+        <div class="top-nav">
+          <div class="top-phone">
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+              />
+            </svg>
 
-                    <svg viewBox="0 0 24 24">
-                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                        d="M6.266 2h11.468c.66 0 1.756.098 2.128 1.152c.222.628.135 1.333.376 1.953c.253.652.65 1.281 1.036 1.849c.382.562.822 1.17.707 1.84c-.13.756-.735 1.467-1.536 1.845c-1.64.774-4.064.308-4.45-2.493c-.323.894-1.315 2.8-4.034 2.8c-2.72 0-3.633-1.906-3.956-2.8c-.386 2.8-2.81 3.267-4.45 2.493c-.8-.378-1.407-1.09-1.536-1.845c-.115-.67.325-1.278.707-1.84c.385-.568.783-1.197 1.036-1.849c.242-.62.154-1.325.376-1.953C4.51 2.098 5.605 2 6.266 2m10.697 18.665v-5.342m1.563 0v-1.336m0 8.013v-1.335m-1.563-2.671h3.126m0 0c.518 0 .938.448.938 1.001v.668c0 .553-.42 1.002-.938 1.002h-4.064m4.064-2.671c.518 0 .938-.449.938-1.002v-.668c0-.553-.42-1.001-.938-1.001h-4.064M3.02 10.481v4.508c0 2.832 0 4.249.879 5.129c.88.88 2.294.88 5.123.88h4.002"
-                        color="currentColor" />
-                        </svg> 
-                        
-                        CryptoSnoo
-                </a>
+            +0 111 222 33 44
+          </div>
 
+          <a
+            class="top-chat"
+            href="https://wa.me/01112223344?text=I%20look%20yours%20help"
+            target="_blank"
+          >
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+              <path d="M8 10h.01" />
+              <path d="M12 10h.01" />
+              <path d="M16 10h.01" />
+            </svg>
+
+            snoo chat
+          </a>
+
+          <div class="top-visite">
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+              <polyline points="16 7 22 7 22 13" />
+            </svg>
+
+            <span class="counter-value" data-target="1532">420</span>
+
+            visited
+          </div>
+        </div>
+
+        <!-- navigation -->
+
+        <!-- open button -->
+        <button id="menu" type="button" aria-label="Open menu">
+          <svg
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="4" x2="20" y1="12" y2="12" />
+            <line x1="4" x2="20" y1="6" y2="6" />
+            <line x1="4" x2="20" y1="18" y2="18" />
+          </svg>
+        </button>
+
+        <!-- close button -->
+        <button id="close-nav" type="button" aria-label="Close menu">
+          <svg
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M7 7h10v10" />
+            <path d="M7 17 17 7" />
+          </svg>
+        </button>
+
+        <div id="nav-overlay"></div>
+
+        <!-- nav content-->
+        <div id="nav-content">
+          <ul class="nav">
+            <li class="li-brand">CryptoSnoo &reg;</li>
+
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+            <li class="last">Copyright &copy; CryptoSnoo</li>
+          </ul>
+        </div>
+      </header>
+
+      <section class="top-wrap">
+        <div class="top-bg">
+          <div class="head-text">
+            <div class="head-about">
+              <h1>Snoo</h1>
+
+              <h2>crypto exchange</h2>
+
+              <div class="head-offer">
+                <div>
+                  <img src="./images/k-1.webp" alt="">
+                  <img src="./images/k-2.webp" alt="">
+                  <img src="./images/k-3.webp" alt="">
+                </div>
+
+                <p>
+                  Join more than <span>45860+ clients</span>, satisfied with the result of
+                  our work.
+                </p>
+              </div>
             </div>
 
-            <div class="top-nav">      
-       
-                    <div class="top-phone">
+            <div class="head-chat">
+              <a
+                class="btn-chat"
+                href="https://wa.me/01112223344?text=I%20look%20yours%20help"
+                target="_blank"
+              >
+                chat
 
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                        </svg>
+                <svg
+                  class="w-6 h-6 ml-2"
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M8 9h8" />
+                  <path d="M8 13h6" />
+                  <path
+                    d="M9 18h-3a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-3l-3 3l-3 -3z"
+                  />
+                </svg>
+              </a>
 
-                        +0 111 222 33 44
+              <svg
+                aria-hidden="true"
+                class="social"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M5 12h.5m3 0h1.5m3 0h6" />
+                <path d="M15 16l4 -4" />
+                <path d="M15 8l4 4" />
+              </svg>
 
-                    </div>
-  
-                    <a class="top-chat" href="https://wa.me/01112223344?text=I%20look%20yours%20help" target="_blank">
+              <a href="https://facebook.com/" target="_blank">
+                <span class="sr-only">Facebook</span>
+                <svg aria-hidden="true" class="social" viewBox="0 0 24 24">
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    color="currentColor"
+                  >
+                    <path
+                      d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12"
+                    />
+                    <path
+                      d="M16.927 8.026h-2.945a1.9 1.9 0 0 0-1.9 1.886l-.086 11.515m-1.914-7.425h4.803"
+                    />
+                  </g>
+                </svg>
+              </a>
 
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-                            <path d="M8 10h.01" />
-                            <path d="M12 10h.01" />
-                            <path d="M16 10h.01" />
-                        </svg>
+              <a href="https://x.com/" target="_blank">
+                <span class="sr-only">X</span>
+                <svg aria-hidden="true" class="social" viewBox="0 0 24 24">
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    color="currentColor"
+                  >
+                    <path
+                      d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12.001 2.5c4.478 0 6.717 0 8.108 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.717 0-8.109-1.391c-1.39-1.392-1.39-3.63-1.39-8.109"
+                    />
+                    <path
+                      d="m7 17l4.194-4.193M17 7l-4.193 4.194m0 0L9.777 7H7l4.194 5.807m1.613-1.614L17 17h-2.778l-3.028-4.193"
+                    />
+                  </g>
+                </svg>
+              </a>
 
-                        snoo chat
+              <a href="https://instagram.com/" target="_blank">
+                <span class="sr-only">Instagram</span>
+                <svg aria-hidden="true" class="social" viewBox="0 0 24 24">
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    color="currentColor"
+                  >
+                    <path
+                      d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12"
+                    />
+                    <path
+                      d="M16.5 12a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m1.008-5.5h-.01"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
 
-                    </a>        
- 
-                <div class="top-visite">
-                
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
-                        <polyline points="16 7 22 7 22 13" />
-                    </svg>          
-                        
-                        <span class="counter-value" data-target="1532">420</span>                  
+          <div><img class="head-pic" src="./images/top.webp" alt=""></div>
+        </div>
+      </section>
 
-                        visited        
-                
-                </div>        
-            
+      <!--================= equipment ================-->
+
+      <section class="brands">
+        <img class="brands-1" src="./images/scout.svg" alt="">
+        <img class="brands-1" src="./images/cos.svg" alt="">
+        <img class="brands-1" src="./images/netflix.svg" alt="">
+        <img class="brands-1" src="./images/enigma.svg" alt="">
+        <img class="brands-1" src="./images/expel.svg" alt="">
+      </section>
+
+      <!--================= about ================-->
+
+      <section id="about">
+        <div class="about-1">
+          <img
+            class="hidden lg:block h-[80%] self-center object-cover"
+            src="./images/app_1.webp"
+            alt=""
+          >
+
+          <div class="about-txt">
+            <svg
+              class="w-12 h-12 text-red-600 ml-6"
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M6.266 2h11.468c.66 0 1.756.098 2.128 1.152c.222.628.135 1.333.376 1.953c.253.652.65 1.281 1.036 1.849c.382.562.822 1.17.707 1.84c-.13.756-.735 1.467-1.536 1.845c-1.64.774-4.064.308-4.45-2.493c-.323.894-1.315 2.8-4.034 2.8c-2.72 0-3.633-1.906-3.956-2.8c-.386 2.8-2.81 3.267-4.45 2.493c-.8-.378-1.407-1.09-1.536-1.845c-.115-.67.325-1.278.707-1.84c.385-.568.783-1.197 1.036-1.849c.242-.62.154-1.325.376-1.953C4.51 2.098 5.605 2 6.266 2m10.697 18.665v-5.342m1.563 0v-1.336m0 8.013v-1.335m-1.563-2.671h3.126m0 0c.518 0 .938.448.938 1.001v.668c0 .553-.42 1.002-.938 1.002h-4.064m4.064-2.671c.518 0 .938-.449.938-1.002v-.668c0-.553-.42-1.001-.938-1.001h-4.064M3.02 10.481v4.508c0 2.832 0 4.249.879 5.129c.88.88 2.294.88 5.123.88h4.002"
+                color="currentColor"
+              />
+            </svg>
+
+            <h2>SnooBank</h2>
+
+            <p>
+              Cupidatat esse magna magna quis aute nisi. Laborum deserunt nulla ad
+              voluptate qui sit ullamco nostrud exercitation ex labore. Ullamco laborum do
+              qui non eu cillum aliqua.
+            </p>
+
+            <p>
+              Incididunt irure eu incididunt dolor consequat velit commodo sint enim aute
+              officia deserunt non mollit. Nulla mollit magna sit ex sunt reprehenderit
+              velit incididunt Ullamco veniam et ut eu esse ex culpa et exercitation
+              anim..
+            </p>
+          </div>
+        </div>
+
+        <div class="about-2">
+          <div class="about-txt">
+            <svg
+              class="w-12 h-12 text-red-600 ml-6"
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2"
+              />
+              <path
+                d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"
+              />
+              <path d="M9 17v-4" />
+              <path d="M12 17v-1" />
+              <path d="M15 17v-2" />
+              <path d="M12 17v-1" />
+            </svg>
+
+            <h2>Our advantages</h2>
+
+            <p>Aute dolore do ipsum reprehenderit eiusmod cupidatat.</p>
+            <p>Laborum minim et dolor cillum aute minim.</p>
+
+            <p>Qui irure mollit deserunt mollit culpa.</p>
+            <p>Amet quis esse consectetur.</p>
+
+            <p>dolore anim ut velit ad adipisicing commodo.</p>
+            <p>consequat eiusmod cupidatat esse reprehenderit irur.</p>
+          </div>
+
+          <img
+            class="hidden lg:block h-[80%] self-center object-cover"
+            src="./images/app_2.webp"
+            alt=""
+          >
+        </div>
+      </section>
+
+      <!--================= service ================-->
+
+      <section id="service">
+        <div class="service-wrap">
+          <div class="cards-label">
+            <h2>Our services</h2>
+            <h5>Commodo occaecat commodo sit commodo consectetur nostrud.</h5>
+          </div>
+
+          <div class="cards-grid">
+            <!-- service 1 -->
+            <div class="service-card">
+              <div>
+                <svg aria-hidden="true" class="text-violet-500" viewBox="0 0 24 24">
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    color="currentColor"
+                  >
+                    <path
+                      d="M19 20.5c.425-.191.79-.439 1.109-.76c1.391-1.402 1.391-3.658 1.391-8.17c0-4.511 0-6.767-1.391-8.168C18.717 2 16.479 2 12 2C7.522 2 5.282 2 3.891 3.402S2.5 7.059 2.5 11.57s0 6.767 1.391 8.169c.32.321.684.569 1.109.76M2.5 8.5h19M7 5.5h.009M11 5.5h.009"
+                    />
+                    <path
+                      d="M10.26 16.378c-1.08 0-1.543.78-1.663 1.26c-.12.479-.12 2.218-.048 2.938c.24.899.84 1.27 1.428 1.39c.54.049 2.82.03 3.48.03c.96.019 1.68-.341 1.98-1.42c.06-.36.12-2.34-.03-2.939c-.318-.96-1.047-1.259-1.647-1.259m-3.5 0h3.5m-3.5 0c0-.06-.002-.826 0-1.26c0-.398-.034-.78.156-1.13c.71-1.413 2.75-1.27 3.254.17c.087.237.093.612.09.96c-.003.442 0 1.26 0 1.26"
+                    />
+                  </g>
+                </svg>
+              </div>
+
+              <h5>Laborum voluptate cupidatat occaecat</h5>
+              <p>Proident excepteur ea reprehenderit duis qui irure in.</p>
             </div>
 
-                <!-- navigation -->
+            <!--  service 2 -->
+            <div class="service-card">
+              <div>
+                <svg aria-hidden="true" class="text-red-500" viewBox="0 0 24 24">
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    color="currentColor"
+                  >
+                    <path
+                      d="M18 10.997c-.392-.8-1.452-1.976-3.63-1.926c0 0-1.727-.075-3.68-.075c-1.952 0-2.866.046-4.43.075c-1.001-.025-2.904.2-3.78 2.276c-.576 1.75-.6 5.427-.25 7.277c.075.95.576 2.276 2.128 2.976c.95.5 2.478.3 3.63.4M5.984 8.196c-.05-2.375-.15-4.25 2.603-5.801c.926-.375 2.303-.7 4.005.1c1.777 1.075 1.999 2.213 2.153 2.5c.425 1.126.2 2.726.25 3.376"
+                    />
+                    <path
+                      d="M15.5 19.735a2.23 2.23 0 0 1-2.245 2.23c-1.236 0-2.255-.986-2.255-2.23a2.253 2.253 0 0 1 2.255-2.244c1.236 0 2.245 1 2.245 2.244m-.275-1.945l1.99-1.942m4.785 0l-1.627-1.54c-.773-.74-1.423-.094-1.747.182l-1.41 1.358m0 0l1.609 1.545"
+                    />
+                  </g>
+                </svg>
+              </div>
 
-                <!-- open button -->
-                <button id="menu">
-
-                    <svg viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <line x1="4" x2="20" y1="12" y2="12" />
-                        <line x1="4" x2="20" y1="6" y2="6" />
-                        <line x1="4" x2="20" y1="18" y2="18" />
-                    </svg>
-
-                </button>
-
-                <!-- close button -->
-                <button id="close-nav">
-
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M7 7h10v10" />
-                        <path d="M7 17 17 7" />
-                    </svg>
-
-                </button>
-
-                <div id="nav-overlay"></div>
-
-                <!-- nav content-->
-                <div id="nav-content">
-
-                    <ul class="nav">
-
-                        <li class="li-brand">CryptoSnoo &reg;</li>
-
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#service">Services</a></li>
-                        <li><a href="#news">News</a></li>
-                        <li><a href="#contact">Contact</a></li>
-
-                        <li class="last">Copyright &copy; CryptoSnoo</li>
-
-                    </ul>
-
-                </div>
-
-        </header>
-
-        <section class="top-wrap">
-
-                <div class="top-bg">
-
-                    <div class="head-text">
-
-                        <div class="head-about">
-
-                            <h1>Snoo</h1>
-
-                            <h2>crypto exchange</h2>
-
-                            <div class="head-offer">
-
-                                <div>
-                                    <img src="./images/k-1.webp" alt="" />
-                                    <img src="./images/k-2.webp" alt="" />
-                                    <img  src="./images/k-3.webp" alt="" />
-                                </div>
-
-                                <p>Join more than <span>45860+ clients</span>, satisfied with the result of our work.</p>
-
-                            </div>
-
-                        </div>
-
-                        <div class="head-chat">
-
-                            <a class="btn" href="https://wa.me/01112223344?text=I%20look%20yours%20help" target="_blank">          
-                            
-                                    chat
-                            
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M8 9h8" />
-                                        <path d="M8 13h6" />
-                                        <path d="M9 18h-3a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-3l-3 3l-3 -3z" />
-                                    </svg>          
-
-                            </a>
-
-                                <svg class="social" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path d="M5 12h.5m3 0h1.5m3 0h6" />
-                                    <path d="M15 16l4 -4" />
-                                    <path d="M15 8l4 4" />
-                                </svg>                  
-                  
-                            <a href="https://facebook.com/" target="_blank">
-
-                                <svg class="social" viewBox="0 0 24 24">
-                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor">
-                                        <path
-                                            d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12" />
-                                        <path
-                                            d="M16.927 8.026h-2.945a1.9 1.9 0 0 0-1.9 1.886l-.086 11.515m-1.914-7.425h4.803" />
-                                    </g>
-                                </svg>
-
-                            </a>
-   
-                            <a href="https://x.com/" target="_blank">
-
-                                <svg class="social" viewBox="0 0 24 24">
-                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor">
-                                        <path
-                                            d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12.001 2.5c4.478 0 6.717 0 8.108 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.717 0-8.109-1.391c-1.39-1.392-1.39-3.63-1.39-8.109" />
-                                        <path
-                                            d="m7 17l4.194-4.193M17 7l-4.193 4.194m0 0L9.777 7H7l4.194 5.807m1.613-1.614L17 17h-2.778l-3.028-4.193" />
-                                    </g>
-                                </svg>
-
-                            </a>
-       
-                            <a href="https://instagram.com/" target="_blank">
-
-                                <svg class="social" viewBox="0 0 24 24">
-                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor">
-                                        <path
-                                            d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12" />
-                                        <path d="M16.5 12a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m1.008-5.5h-.01" />
-                                    </g>
-                                </svg>
-
-                            </a>
-
-                        </div>
-                    </div>
-
-                <div class="head-pic"><img src="./images/top.webp" alt=""></div>
-
+              <h5>Magna reprehenderit Lorem</h5>
+              <p>Veniam id culpa Lorem cupidatat fugiat.</p>
             </div>
 
-        </section>
+            <!-- service 3 -->
+            <div class="service-card">
+              <div>
+                <svg aria-hidden="true" class="text-green-500" viewBox="0 0 24 24">
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    color="currentColor"
+                  >
+                    <path
+                      d="M4.268 18.845c.225 1.67 1.608 2.979 3.292 3.056c1.416.065 2.855.099 4.44.099s3.024-.034 4.44-.1c1.684-.076 3.067-1.385 3.292-3.055c.147-1.09.268-2.207.268-3.345s-.121-2.255-.268-3.345c-.225-1.67-1.608-2.979-3.292-3.056A95 95 0 0 0 12 9c-1.585 0-3.024.034-4.44.1c-1.684.076-3.067 1.385-3.292 3.055C4.12 13.245 4 14.362 4 15.5s.121 2.255.268 3.345"
+                    />
+                    <path
+                      d="M7.5 9V6.5a4.5 4.5 0 0 1 9 0V9m-6.062 9.167v-5.334m1.562 0V11.5m0 8v-1.333M10.438 15.5h3.124m0 0c.518 0 .938.448.938 1v.667c0 .552-.42 1-.937 1H9.5m4.063-2.667c.517 0 .937-.448.937-1v-.667c0-.552-.42-1-.937-1H9.5"
+                    />
+                  </g>
+                </svg>
+              </div>
 
-        <!--================= equipment ================-->
-
-        <section class="reveal brands">
-            <img src="./images/scout.svg" alt="" />
-            <img src="./images/cos.svg" alt="" />
-            <img src="./images/netflix.svg" alt="" />
-            <img src="./images/enigma.svg" alt="" />
-            <img src="./images/expel.svg" alt="" />
-        </section>
-
-        <!--================= about ================-->
-
-        <section class="reveal" id="about">
-
-                <div class="about-1">
-
-                    <img src="./images/app_1.webp" alt="" />
-
-                    <div class="about-txt">
-
-                        <svg viewBox="0 0 24 24">
-                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M6.266 2h11.468c.66 0 1.756.098 2.128 1.152c.222.628.135 1.333.376 1.953c.253.652.65 1.281 1.036 1.849c.382.562.822 1.17.707 1.84c-.13.756-.735 1.467-1.536 1.845c-1.64.774-4.064.308-4.45-2.493c-.323.894-1.315 2.8-4.034 2.8c-2.72 0-3.633-1.906-3.956-2.8c-.386 2.8-2.81 3.267-4.45 2.493c-.8-.378-1.407-1.09-1.536-1.845c-.115-.67.325-1.278.707-1.84c.385-.568.783-1.197 1.036-1.849c.242-.62.154-1.325.376-1.953C4.51 2.098 5.605 2 6.266 2m10.697 18.665v-5.342m1.563 0v-1.336m0 8.013v-1.335m-1.563-2.671h3.126m0 0c.518 0 .938.448.938 1.001v.668c0 .553-.42 1.002-.938 1.002h-4.064m4.064-2.671c.518 0 .938-.449.938-1.002v-.668c0-.553-.42-1.001-.938-1.001h-4.064M3.02 10.481v4.508c0 2.832 0 4.249.879 5.129c.88.88 2.294.88 5.123.88h4.002"
-                                color="currentColor" />
-                        </svg>
-
-                        <h2>SnooBank</h2>
-
-                        <p>
-                            Cupidatat esse magna magna quis aute nisi. Laborum deserunt nulla ad voluptate qui sit
-                            ullamco nostrud exercitation ex labore. Ullamco laborum do qui non eu cillum aliqua. 
-                        </p>      
-
-                        <p>
-                            Incididunt irure eu incididunt dolor consequat velit commodo sint enim aute officia deserunt
-                            non mollit. Nulla mollit magna sit ex sunt reprehenderit velit incididunt Ullamco veniam et
-                            ut eu esse ex culpa et exercitation anim..
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="about-2">
-
-                    <div class="about-txt">            
-
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path
-                                d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" />
-                            <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" />
-                            <path d="M9 17v-4" />
-                            <path d="M12 17v-1" />
-                            <path d="M15 17v-2" />
-                            <path d="M12 17v-1" />
-                        </svg>
-
-                        <h2>Our advantages</h2>                  
-
-                        <p>Aute dolore do ipsum reprehenderit eiusmod cupidatat.</p>
-                        <p>Laborum minim et dolor cillum aute minim.</p>
-
-                        <p>Qui irure mollit deserunt mollit culpa.</p>
-                        <p>Amet quis esse consectetur.</p>
-
-                        <p>dolore anim ut velit ad adipisicing commodo.</p>
-                        <p>consequat eiusmod cupidatat esse reprehenderit irur.</p>     
-
-                    </div>
-
-                    <img src="./images/app_2.webp" alt="" />
-
-                </div>
-
-        </section>
-
-        <!--================= service ================-->
-
-        <section class="reveal" id="service">
-
-            <div class="service-wrap">
-
-                <div class="cards-label">
-                    <h2>Our services</h2>
-                    <h5>Commodo occaecat commodo sit commodo consectetur nostrud.</h5>
-                </div>
-
-                <div class="cards-grid">
-
-                    <!-- service 1 -->
-                    <div class="service-card">
-
-                        <div>
-                            <svg class="text-violet-500" viewBox="0 0 24 24">
-                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    color="currentColor">
-                                    <path
-                                        d="M19 20.5c.425-.191.79-.439 1.109-.76c1.391-1.402 1.391-3.658 1.391-8.17c0-4.511 0-6.767-1.391-8.168C18.717 2 16.479 2 12 2C7.522 2 5.282 2 3.891 3.402S2.5 7.059 2.5 11.57s0 6.767 1.391 8.169c.32.321.684.569 1.109.76M2.5 8.5h19M7 5.5h.009M11 5.5h.009" />
-                                    <path
-                                        d="M10.26 16.378c-1.08 0-1.543.78-1.663 1.26c-.12.479-.12 2.218-.048 2.938c.24.899.84 1.27 1.428 1.39c.54.049 2.82.03 3.48.03c.96.019 1.68-.341 1.98-1.42c.06-.36.12-2.34-.03-2.939c-.318-.96-1.047-1.259-1.647-1.259m-3.5 0h3.5m-3.5 0c0-.06-.002-.826 0-1.26c0-.398-.034-.78.156-1.13c.71-1.413 2.75-1.27 3.254.17c.087.237.093.612.09.96c-.003.442 0 1.26 0 1.26" />
-                                </g>
-                            </svg>
-                        </div>
-
-                        <h5>Laborum voluptate cupidatat occaecat</h5>
-                        <p>Proident excepteur ea reprehenderit duis qui irure in.</p>
-
-                    </div>
-
-                    <!--  service 2 -->
-                    <div class="service-card">
-
-                            <div>
-                                <svg class="text-red-500" viewBox="0 0 24 24">
-                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="1.5" color="currentColor">
-                                        <path
-                                            d="M18 10.997c-.392-.8-1.452-1.976-3.63-1.926c0 0-1.727-.075-3.68-.075c-1.952 0-2.866.046-4.43.075c-1.001-.025-2.904.2-3.78 2.276c-.576 1.75-.6 5.427-.25 7.277c.075.95.576 2.276 2.128 2.976c.95.5 2.478.3 3.63.4M5.984 8.196c-.05-2.375-.15-4.25 2.603-5.801c.926-.375 2.303-.7 4.005.1c1.777 1.075 1.999 2.213 2.153 2.5c.425 1.126.2 2.726.25 3.376" />
-                                        <path
-                                            d="M15.5 19.735a2.23 2.23 0 0 1-2.245 2.23c-1.236 0-2.255-.986-2.255-2.23a2.253 2.253 0 0 1 2.255-2.244c1.236 0 2.245 1 2.245 2.244m-.275-1.945l1.99-1.942m4.785 0l-1.627-1.54c-.773-.74-1.423-.094-1.747.182l-1.41 1.358m0 0l1.609 1.545" />
-                                    </g>
-                                </svg>
-                            </div>         
-
-                        <h5>Magna reprehenderit Lorem</h5>
-                        <p>Veniam id culpa Lorem cupidatat fugiat.</p>
-
-                    </div>
-
-                    <!-- service 3 -->
-                    <div class="service-card">
-               
-                            <div>
-                                <svg class="text-green-500" viewBox="0 0 24 24">
-                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="1.5" color="currentColor">
-                                        <path
-                                            d="M4.268 18.845c.225 1.67 1.608 2.979 3.292 3.056c1.416.065 2.855.099 4.44.099s3.024-.034 4.44-.1c1.684-.076 3.067-1.385 3.292-3.055c.147-1.09.268-2.207.268-3.345s-.121-2.255-.268-3.345c-.225-1.67-1.608-2.979-3.292-3.056A95 95 0 0 0 12 9c-1.585 0-3.024.034-4.44.1c-1.684.076-3.067 1.385-3.292 3.055C4.12 13.245 4 14.362 4 15.5s.121 2.255.268 3.345" />
-                                        <path
-                                            d="M7.5 9V6.5a4.5 4.5 0 0 1 9 0V9m-6.062 9.167v-5.334m1.562 0V11.5m0 8v-1.333M10.438 15.5h3.124m0 0c.518 0 .938.448.938 1v.667c0 .552-.42 1-.937 1H9.5m4.063-2.667c.517 0 .937-.448.937-1v-.667c0-.552-.42-1-.937-1H9.5" />
-                                    </g>
-                                </svg>
-                            </div>                 
-
-                        <h5>Sint sint veniam culpa et</h5>
-                        <p>Amet voluptate sunt nostrud ut occaecat amet.</p>
-
-                    </div>
-
-                    <!-- service  4 -->
-                    <div class="service-card">            
-
-                            <div>
-                                <svg class="text-sky-500" viewBox="0 0 24 24">
-                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="1.5"
-                                        d="M12 17c.227 0 .438-.106.86-.318l3.39-1.704c1.5-.754 2.25-1.131 2.25-1.728v-7.5M12 17c-.227 0-.438-.106-.86-.318l-3.39-1.704c-1.5-.754-2.25-1.131-2.25-1.728v-7.5M12 17V9.5m6.5-3.75c0-.597-.75-.974-2.25-1.728l-3.39-1.704C12.438 2.106 12.227 2 12 2s-.438.106-.86.318L7.75 4.022C6.25 4.776 5.5 5.153 5.5 5.75m13 0c0 .597-.75.974-2.25 1.728l-3.39 1.704c-.422.212-.633.318-.86.318M5.5 5.75c0 .597.75.974 2.25 1.728l3.39 1.704c.422.212.633.318.86.318m-2 11.25c0-.69.56-1.25 1.25-1.25h1.5c.69 0 1.25.56 1.25 1.25m-4 0c0 .69.56 1.25 1.25 1.25h1.5c.69 0 1.25-.56 1.25-1.25m-4 0H5m9 0h5"
-                                        color="currentColor" />
-                                </svg>
-                            </div>         
-
-                        <h5>Officia officia fugiat veniam</h5>
-                        <p>Ea amet minim magna minim aliqua pariatur magna.</p>
-
-                    </div>
-
-                    <!-- service  5 -->
-                    <div class="service-card">     
-
-                            <div>
-                                <svg class="text-orange-500" viewBox="0 0 24 24">
-                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="1.5" color="currentColor">
-                                        <path
-                                            d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12" />
-                                        <path
-                                            d="M2.5 14.5h.539c.472 0 .708 0 .914-.099c.205-.098.352-.283.647-.652L6 12l1.5 2.5L9 11l2.5 5L15 9l2 3.5l1.5-1.5l1.445 2.168c.252.378.378.567.562.681q.055.034.114.061c.198.09.425.09.879.09M15 2.5v3m0 16v-7" />
-                                        <circle cx="15" cy="9" r="1" />
-                                    </g>
-                                </svg>
-                            </div>    
-
-                        <h5>Sit sunt ullamco et est</h5>
-
-                        <p>Officia fugiat cupidatat deserunt nulla nulla aliqua sunt cillum est enim irure.</p>
-
-                    </div>
-
-                    <!--  service 6 -->
-                    <div class="service-card"> 
-
-                            <div>
-                                <svg class="text-violet-500" viewBox="0 0 24 24">
-                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor">
-                                        <path
-                                            d="M12.034 3.747a2.2 2.2 0 0 0-.892-.234c-1.094-.04-1.942.802-3.637 2.489S4.96 8.532 5 9.619s.954 1.996 2.78 3.812l3.32 3.303c1.827 1.815 2.74 2.723 3.834 2.764s1.942-.803 3.638-2.49c1.367-1.36 2.183-2.17 2.427-3.005M3 12.504c.118 2.872 1.978 8.492 8.37 8.974c.376.028.564.042.618-.072s-.082-.246-.354-.51l-1.22-1.187" />
-                                        <path
-                                            d="M15.737 5.679V4.288c0-.206.008-.414.082-.606c.196-.51.715-1.18 1.66-1.18c.946 0 1.486.67 1.682 1.18c.074.192.082.4.082.606v1.39m-3.437 5.826h3.388c.997 0 1.806-.807 1.806-1.802V7.699c0-.995-.809-1.802-1.806-1.802h-3.388c-.997 0-1.806.807-1.806 1.802v2.003c0 .995.809 1.802 1.806 1.802" />
-                                    </g>
-                                </svg>
-                            </div>
-
-                        <h5>Eu minim qui incididunt aute</h5>
-                        <p>Mollit et proident cillum aliqua consequat eiusmod eu magna ut minim mollit.</p>
-
-                    </div>
-                </div>
-
-
+              <h5>Sint sint veniam culpa et</h5>
+              <p>Amet voluptate sunt nostrud ut occaecat amet.</p>
             </div>
 
-        </section>
+            <!-- service  4 -->
+            <div class="service-card">
+              <div>
+                <svg aria-hidden="true" class="text-sky-500" viewBox="0 0 24 24">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M12 17c.227 0 .438-.106.86-.318l3.39-1.704c1.5-.754 2.25-1.131 2.25-1.728v-7.5M12 17c-.227 0-.438-.106-.86-.318l-3.39-1.704c-1.5-.754-2.25-1.131-2.25-1.728v-7.5M12 17V9.5m6.5-3.75c0-.597-.75-.974-2.25-1.728l-3.39-1.704C12.438 2.106 12.227 2 12 2s-.438.106-.86.318L7.75 4.022C6.25 4.776 5.5 5.153 5.5 5.75m13 0c0 .597-.75.974-2.25 1.728l-3.39 1.704c-.422.212-.633.318-.86.318M5.5 5.75c0 .597.75.974 2.25 1.728l3.39 1.704c.422.212.633.318.86.318m-2 11.25c0-.69.56-1.25 1.25-1.25h1.5c.69 0 1.25.56 1.25 1.25m-4 0c0 .69.56 1.25 1.25 1.25h1.5c.69 0 1.25-.56 1.25-1.25m-4 0H5m9 0h5"
+                    color="currentColor"
+                  />
+                </svg>
+              </div>
 
-        <!--================= news ================-->
-
-        <section class="reveal" id="news">  
-
-                <div class="cards-label">
-
-                    <h2>News</h2>
-                    <h5>Irure est occaecat laborum laboris do elit nostrud est.</h5>
-
-                </div>
-
-                <div class="news-grid">  
-
-                    <!-- card 1 -->
-                    <div class="news-card">
-     
-                        <img class="" src="./images/news_1.webp" alt="">  
-
-                        <div>
-                            <h3>Reprehenderit ipsum.</h3>
-                            <p>Mollit enim laboris deserunt dolor irure dolore amet. Ipsum officia enim enim esse eu.</p>
-                        </div>
-
-                    </div>
-
-                    <!-- card 2 -->
-                    <div class="news-card">
-   
-                        <img src="./images/news_2.webp" alt="">           
-
-                        <div>
-                            <h3>Denim deserunt</h3>
-                            <p>Reprehenderit sint officia nisi minim minim velit consectetur in deserunt non cupidatat voluptate.</p>
-                        </div>
-
-                    </div>
-
-                    <!-- card 3 -->
-                    <div class="news-card">
-      
-                        <img src="./images/news_3.webp" alt="">  
-
-                        <div>
-                          <h3>Mollit laboris dolor</h3>
-                          <p>Adipisicing commodo enim aliqua dolor id laborum. Dolor duis non amet culpa anim.</p>
-                        </div>
-
-                    </div>
-
-                    <!-- card 4 -->
-                    <div class="news-card">
-
-                        <img src="./images/news_4.webp" alt="">
-
-                        <div>
-                            <h3>Qui quis dolor</h3>
-                            <p>Nisi in fugiat ut ad ut in nisi nisi amet sint. Ipsum officia enim enim esse eu.</p>
-                        </div>
-
-                    </div>
-
-                    <!-- card 5 -->
-                    <div class="news-card">
-
-                        <img src="./images/news_5.webp" alt="">   
-
-                        <div>
-                            <h3>Sunt consectetur</h3>
-                            <p>Consectetur consequat eu ea reprehenderit veniam fugiat aute mollit anim. Eu et consequat id minim incididunt.</p>
-                        </div>
-
-                    </div>
-
-                    <!-- card 6 -->
-                    <div class="news-card">
-      
-                        <img src="./images/news_6.webp" alt=""> 
-
-                        <div>
-                            <h3>Elit dolore labore</h3>
-                            <p>Duis do aute consequat sint. Ea aliqua minim voluptate mollit consectetur laboris. Ullamco esse.</p>
-                        </div>
-
-                    </div>
-
-                </div> 
-
-        </section>
-
-        <!--================= map ================-->
-
-        <section class="reveal map-wrap">
-
-            <div class="cards-label">
-
-                <h2>Crypto Map</h2>
-                <h5>Eu cupidatat culpa proident dolor irure.</h5>
-
+              <h5>Officia officia fugiat veniam</h5>
+              <p>Ea amet minim magna minim aliqua pariatur magna.</p>
             </div>
 
-            <div class="map">
+            <!-- service  5 -->
+            <div class="service-card">
+              <div>
+                <svg aria-hidden="true" class="text-orange-500" viewBox="0 0 24 24">
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    color="currentColor"
+                  >
+                    <path
+                      d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12"
+                    />
+                    <path
+                      d="M2.5 14.5h.539c.472 0 .708 0 .914-.099c.205-.098.352-.283.647-.652L6 12l1.5 2.5L9 11l2.5 5L15 9l2 3.5l1.5-1.5l1.445 2.168c.252.378.378.567.562.681q.055.034.114.061c.198.09.425.09.879.09M15 2.5v3m0 16v-7"
+                    />
+                    <circle cx="15" cy="9" r="1" />
+                  </g>
+                </svg>
+              </div>
 
-                <div class="map-browser">
-                    <span class="bg-red-400"></span>
-                    <span class="bg-yellow-400"></span>
-                    <span class="bg-green-400"></span>
-                </div>
+              <h5>Sit sunt ullamco et est</h5>
 
-                <div class="map-frame">
-
-                    <!-- google map -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6030.418742494061!2d-111.34563870463673!3d26.01036670629853!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1471908546569" frameborder="0"></iframe>
-
-                </div>
-
+              <p>
+                Officia fugiat cupidatat deserunt nulla nulla aliqua sunt cillum est enim
+                irure.
+              </p>
             </div>
 
-        </section>
+            <!--  service 6 -->
+            <div class="service-card">
+              <div>
+                <svg aria-hidden="true" class="text-violet-500" viewBox="0 0 24 24">
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    color="currentColor"
+                  >
+                    <path
+                      d="M12.034 3.747a2.2 2.2 0 0 0-.892-.234c-1.094-.04-1.942.802-3.637 2.489S4.96 8.532 5 9.619s.954 1.996 2.78 3.812l3.32 3.303c1.827 1.815 2.74 2.723 3.834 2.764s1.942-.803 3.638-2.49c1.367-1.36 2.183-2.17 2.427-3.005M3 12.504c.118 2.872 1.978 8.492 8.37 8.974c.376.028.564.042.618-.072s-.082-.246-.354-.51l-1.22-1.187"
+                    />
+                    <path
+                      d="M15.737 5.679V4.288c0-.206.008-.414.082-.606c.196-.51.715-1.18 1.66-1.18c.946 0 1.486.67 1.682 1.18c.074.192.082.4.082.606v1.39m-3.437 5.826h3.388c.997 0 1.806-.807 1.806-1.802V7.699c0-.995-.809-1.802-1.806-1.802h-3.388c-.997 0-1.806.807-1.806 1.802v2.003c0 .995.809 1.802 1.806 1.802"
+                    />
+                  </g>
+                </svg>
+              </div>
 
+              <h5>Eu minim qui incididunt aute</h5>
+              <p>
+                Mollit et proident cillum aliqua consequat eiusmod eu magna ut minim
+                mollit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--================= news ================-->
+
+      <section id="news">
+        <div class="cards-label">
+          <h2>News</h2>
+          <h5>Irure est occaecat laborum laboris do elit nostrud est.</h5>
+        </div>
+
+        <div class="news-grid">
+          <div class="news-card">
+            <img class="news-card__image" src="./images/news_1.webp" alt="">
+
+            <div class="news-card__content">
+              <h3 class="news-card__title">Reprehenderit ipsum.</h3>
+              <p class="news-card__text">
+                Mollit enim laboris deserunt dolor irure dolore amet. Ipsum officia enim
+                enim esse eu.
+              </p>
+            </div>
+          </div>
+
+          <div class="news-card">
+            <img class="news-card__image" src="./images/news_2.webp" alt="">
+
+            <div class="news-card__content">
+              <h3 class="news-card__title">Denim deserunt</h3>
+              <p class="news-card__text">
+                Reprehenderit sint officia nisi minim minim velit consectetur in deserunt
+                non cupidatat voluptate.
+              </p>
+            </div>
+          </div>
+
+          <div class="news-card">
+            <img class="news-card__image" src="./images/news_3.webp" alt="">
+
+            <div class="news-card__content">
+              <h3 class="news-card__title">Mollit laboris dolor</h3>
+              <p class="news-card__text">
+                Adipisicing commodo enim aliqua dolor id laborum. Dolor duis non amet
+                culpa anim.
+              </p>
+            </div>
+          </div>
+
+          <div class="news-card">
+            <img class="news-card__image" src="./images/news_4.webp" alt="">
+
+            <div class="news-card__content">
+              <h3 class="news-card__title">Qui quis dolor</h3>
+              <p class="news-card__text">
+                Nisi in fugiat ut ad ut in nisi nisi amet sint. Ipsum officia enim enim
+                esse eu.
+              </p>
+            </div>
+          </div>
+
+          <div class="news-card">
+            <img class="news-card__image" src="./images/news_5.webp" alt="">
+
+            <div class="news-card__content">
+              <h3 class="news-card__title">Sunt consectetur</h3>
+              <p class="news-card__text">
+                Consectetur consequat eu ea reprehenderit veniam fugiat aute mollit anim.
+                Eu et consequat id minim incididunt.
+              </p>
+            </div>
+          </div>
+
+          <div class="news-card">
+            <img class="news-card__image" src="./images/news_6.webp" alt="">
+
+            <div class="news-card__content">
+              <h3 class="news-card__title">Elit dolore labore</h3>
+              <p class="news-card__text">
+                Duis do aute consequat sint. Ea aliqua minim voluptate mollit consectetur
+                laboris. Ullamco esse.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--================= map ================-->
+
+      <section class="map-wrap">
+        <div class="cards-label">
+          <h2>Crypto Map</h2>
+          <h5>Eu cupidatat culpa proident dolor irure.</h5>
+        </div>
+
+        <div class="map">
+          <div class="map-browser">
+            <span class="bg-red-400"></span>
+            <span class="bg-yellow-400"></span>
+            <span class="bg-green-400"></span>
+          </div>
+
+          <div class="map-frame">
+            <!-- google map -->
+            <iframe
+              title="Crypto map"
+              src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6030.418742494061!2d-111.34563870463673!3d26.01036670629853!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1471908546569"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!--================= footer ================-->
 
     <footer id="contact">
+      <div class="foot-wrap">
+        <!-- foot 1 -->
+        <div class="foot-brand">
+          <div class="foot-logo">
+            <svg
+              class=" w-9 h-9 text-blue-500/70 hover:text-red-500 mr-1"
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M6.266 2h11.468c.66 0 1.756.098 2.128 1.152c.222.628.135 1.333.376 1.953c.253.652.65 1.281 1.036 1.849c.382.562.822 1.17.707 1.84c-.13.756-.735 1.467-1.536 1.845c-1.64.774-4.064.308-4.45-2.493c-.323.894-1.315 2.8-4.034 2.8c-2.72 0-3.633-1.906-3.956-2.8c-.386 2.8-2.81 3.267-4.45 2.493c-.8-.378-1.407-1.09-1.536-1.845c-.115-.67.325-1.278.707-1.84c.385-.568.783-1.197 1.036-1.849c.242-.62.154-1.325.376-1.953C4.51 2.098 5.605 2 6.266 2m10.697 18.665v-5.342m1.563 0v-1.336m0 8.013v-1.335m-1.563-2.671h3.126m0 0c.518 0 .938.448.938 1.001v.668c0 .553-.42 1.002-.938 1.002h-4.064m4.064-2.671c.518 0 .938-.449.938-1.002v-.668c0-.553-.42-1.001-.938-1.001h-4.064M3.02 10.481v4.508c0 2.832 0 4.249.879 5.129c.88.88 2.294.88 5.123.88h4.002"
+                color="currentColor"
+              />
+            </svg>
 
-        <div class="foot-wrap">
+            <a class="footer__link" href="https://snookee.vercel.app/">CryptoSnoo</a>
+          </div>
 
-            <!-- foot 1 -->
-            <div class="foot-brand">              
-
-                <div class="foot-logo">                         
-                
-                        <svg viewBox="0 0 24 24">
-                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                d="M6.266 2h11.468c.66 0 1.756.098 2.128 1.152c.222.628.135 1.333.376 1.953c.253.652.65 1.281 1.036 1.849c.382.562.822 1.17.707 1.84c-.13.756-.735 1.467-1.536 1.845c-1.64.774-4.064.308-4.45-2.493c-.323.894-1.315 2.8-4.034 2.8c-2.72 0-3.633-1.906-3.956-2.8c-.386 2.8-2.81 3.267-4.45 2.493c-.8-.378-1.407-1.09-1.536-1.845c-.115-.67.325-1.278.707-1.84c.385-.568.783-1.197 1.036-1.849c.242-.62.154-1.325.376-1.953C4.51 2.098 5.605 2 6.266 2m10.697 18.665v-5.342m1.563 0v-1.336m0 8.013v-1.335m-1.563-2.671h3.126m0 0c.518 0 .938.448.938 1.001v.668c0 .553-.42 1.002-.938 1.002h-4.064m4.064-2.671c.518 0 .938-.449.938-1.002v-.668c0-.553-.42-1.001-.938-1.001h-4.064M3.02 10.481v4.508c0 2.832 0 4.249.879 5.129c.88.88 2.294.88 5.123.88h4.002"
-                                color="currentColor" />
-                        </svg>
-
-                     <a href="https://snookee.vercel.app/">CryptoSnoo</a>
-                
-                </div>
-
-                <div class="copyright"> © 
-                    <script>document.write(new Date().getFullYear());</script> by<a href="https://github.com/yojeero" target="_blank"> yojee</a>
-                </div>
-
-            </div>
-
-            <!-- foot 2 -->
-            <div class="foot-column">
-
-                <p>Links</p>
-
-                <ul>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#service">services</a></li>
-                    <li><a href="#news">news</a></li>
-                </ul>
-
-            </div>
-
-            <!-- foot 3 -->
-            <div class="foot-column">
-
-                <p>Work time</p>
-
-                <dl>
-                    <dt>Mon - Sat</dt>
-                    <dd>8:00 - 20:00</dd>
-                </dl>
-
-                <dl>
-                    <dt>Sunday</dt>
-                    <dd>Day off</dd>
-                </dl>
-
-            </div>
-
-            <!-- foot 4 -->
-            <div class="foot-column">
-
-                <p>Contact</p>
-
-                <div>
-
-                    <h5>Snoo Bank</h5>
-                    <p>(+0) 111 222 33 44</p>
-           
-                    <a onClick="javascript:window.open('mailto:your@email.com', 'Mail'); event.preventDefault()" href="mailto:your@email.com?Subject=Hi%20Snoo%20Poe'">
-                        snoo@snoo.bank
-
-                    </a>
-         
-                </div>
-
-            </div>
-
-            <!-- foot 5 -->
-            <div class="foot-column">
-
-                <p>Follow Us</p>
-
-                <div class="foot-social">
-
-                    <!-- twitter -->
-                    <a href="https://x.com/" target="_blank">
-
-                        <svg viewBox="0 0 24 24">
-                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor">
-                                <path
-                                    d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12.001 2.5c4.478 0 6.717 0 8.108 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.717 0-8.109-1.391c-1.39-1.392-1.39-3.63-1.39-8.109" />
-                                <path
-                                    d="m7 17l4.194-4.193M17 7l-4.193 4.194m0 0L9.777 7H7l4.194 5.807m1.613-1.614L17 17h-2.778l-3.028-4.193" />
-                            </g>
-                        </svg>
-
-                    </a>
-
-                    <!-- facebook -->
-                    <a href="https://facebook.com/" target="_blank">
-
-                        <svg viewBox="0 0 24 24">
-                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor">
-                                <path
-                                    d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12" />
-                                <path
-                                    d="M16.927 8.026h-2.945a1.9 1.9 0 0 0-1.9 1.886l-.086 11.515m-1.914-7.425h4.803" />
-                            </g>
-                        </svg>
-
-                    </a>
-
-                     <!-- instagram -->
-                    <a href="https://instagram.com/" target="_blank">
-
-                        <svg viewBox="0 0 24 24">
-                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor">
-                                <path
-                                    d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12" />
-                                <path d="M16.5 12a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m1.008-5.5h-.01" />
-                            </g>
-                        </svg>
-
-                    </a>
-
-                </div>
-
-            </div>
-
+          <div class="copyright">
+            ©<script>
+            document.write(new Date().getFullYear());
+            </script> by
+            <a class="footer__link" href="https://github.com/yojeero" target="_blank">
+              yojee</a
+            >
+          </div>
         </div>
 
+        <!-- foot 2 -->
+        <div class="foot-column">
+          <p>Links</p>
+
+          <ul>
+            <li><a href="#top">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#service">services</a></li>
+            <li><a href="#news">news</a></li>
+          </ul>
+        </div>
+
+        <!-- foot 3 -->
+        <div class="foot-column">
+          <p>Work time</p>
+
+          <dl>
+            <dt>Mon - Sat</dt>
+            <dd>8:00 - 20:00</dd>
+          </dl>
+
+          <dl>
+            <dt>Sunday</dt>
+            <dd>Day off</dd>
+          </dl>
+        </div>
+
+        <!-- foot 4 -->
+        <div class="foot-column">
+          <p>Contact</p>
+
+          <div>
+            <h5>Snoo Bank</h5>
+            <p>(+0) 111 222 33 44</p>
+
+            <a
+              class="footer__link"
+              onClick="javascript:window.open('mailto:your@email.com', 'Mail'); event.preventDefault()"
+              href="mailto:your@email.com?Subject=Hi%20Snoo%20Poe'"
+            >
+              snoo@snoo.bank
+            </a>
+          </div>
+        </div>
+
+        <!-- foot 5 -->
+        <div class="foot-column">
+          <p>Follow Us</p>
+
+          <div class="foot-social">
+            <!-- twitter -->
+            <a class="foot-social-link" href="https://x.com/" target="_blank">
+              <span class="sr-only">X</span>
+              <svg
+                class="h-6 w-6 text-slate-400 hover:text-red-500"
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+              >
+                <g
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  color="currentColor"
+                >
+                  <path
+                    d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12.001 2.5c4.478 0 6.717 0 8.108 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.717 0-8.109-1.391c-1.39-1.392-1.39-3.63-1.39-8.109"
+                  />
+                  <path
+                    d="m7 17l4.194-4.193M17 7l-4.193 4.194m0 0L9.777 7H7l4.194 5.807m1.613-1.614L17 17h-2.778l-3.028-4.193"
+                  />
+                </g>
+              </svg>
+            </a>
+
+            <!-- facebook -->
+            <a class="foot-social-link" href="https://facebook.com/" target="_blank">
+              <span class="sr-only">Facebook</span>
+              <svg
+                class="h-6 w-6 text-slate-400 hover:text-red-500"
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+              >
+                <g
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  color="currentColor"
+                >
+                  <path
+                    d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12"
+                  />
+                  <path
+                    d="M16.927 8.026h-2.945a1.9 1.9 0 0 0-1.9 1.886l-.086 11.515m-1.914-7.425h4.803"
+                  />
+                </g>
+              </svg>
+            </a>
+
+            <!-- instagram -->
+            <a class="foot-social-link" href="https://instagram.com/" target="_blank">
+              <span class="sr-only">Instagram</span>
+              <svg
+                class="h-6 w-6 text-slate-400 hover:text-red-500"
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+              >
+                <g
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  color="currentColor"
+                >
+                  <path
+                    d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12"
+                  />
+                  <path d="M16.5 12a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m1.008-5.5h-.01" />
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
 
-<!-- JS -->
-
-  <!-- loader hide -->
-  <script>
-  window.addEventListener("load", () => {
-    const loader = document.querySelector(".loader");
-    if (!loader) return;
-
-    document.body.classList.remove("loading");
-    loader.classList.add("opacity-0");
-
-    setTimeout(() => loader.remove(), 300);
-  });
-  </script> 
-
-    <script src="./js/scrollreveal.min.js"></script>
+    <!-- JS -->
     <script src="./js/app.js"></script>
     <script src="./js/visiters-counter.js"></script>
     <script src="./js/yandex-map.js"></script>
     <script src="./js/up.min.js"></script>
-
-</body>
+  </body>
 </html>
