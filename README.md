@@ -1,14 +1,10 @@
 <img src="preview/snoo_2.webp" width="100%">   
 
-<img src="https://img.shields.io/badge/Snoo-7678ed?style=for-the-badge" width="40%" alt="Snoo">  
-<img src="https://img.shields.io/badge/98-green?style=for-the-badge" width="20%" alt="Yojee">
-<img src="https://img.shields.io/badge/lighthouse-green?style=for-the-badge" width="30%" alt="Yojee"> 
+<img src="https://img.shields.io/badge/Snoo-7678ed?style=for-the-badge" width="40%" alt="Snoo"><img src="https://img.shields.io/badge/98-green?style=for-the-badge" width="20%" alt="Yojee"><img src="https://img.shields.io/badge/lighthouse-green?style=for-the-badge" width="30%" alt="Yojee"> 
 
-> [!NOTE]
-> Features 🧼    
+Features 🧼    
 
 - News Section   
-- Mobile-friendly   
 - Yandex Maps API    
 - Responsive Design     
 - Modern UI elements   
