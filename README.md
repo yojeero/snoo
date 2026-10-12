@@ -4,13 +4,12 @@
 
 Features 🧼    
 
+- Modern UI   
 - News Section   
 - Yandex Maps API    
 - Responsive Design     
-- Modern UI elements   
 - Interactive Navigation   
 - 98% Lighthouse Performance   
-- Social Media Integration   
 - Cloud & Static Hosting Ready     
 
 #### Tech Stack   
