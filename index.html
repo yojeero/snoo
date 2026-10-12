@@ -17,7 +17,7 @@
 
   <body>
     <main>
-      <header>
+      <header id="top">
         <div class="logo">
           <a href="https://snookee.vercel.app/" target="_blank">
             <svg aria-hidden="true" viewBox="0 0 24 24">
@@ -202,7 +202,7 @@
 
               <svg
                 aria-hidden="true"
-                class="social"
+                class="w-6 h-6 text-slate-500 ml-0"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -218,7 +218,7 @@
 
               <a href="https://facebook.com/" target="_blank">
                 <span class="sr-only">Facebook</span>
-                <svg aria-hidden="true" class="social" viewBox="0 0 24 24">
+                <svg aria-hidden="true" class="w-6 h-6 text-slate-500 hover:text-red-500 ml-0" viewBox="0 0 24 24">
                   <g
                     fill="none"
                     stroke="currentColor"
@@ -239,7 +239,7 @@
 
               <a href="https://x.com/" target="_blank">
                 <span class="sr-only">X</span>
-                <svg aria-hidden="true" class="social" viewBox="0 0 24 24">
+                <svg aria-hidden="true" class="w-6 h-6 text-slate-500 hover:text-red-500 ml-0" viewBox="0 0 24 24">
                   <g
                     fill="none"
                     stroke="currentColor"
@@ -260,7 +260,7 @@
 
               <a href="https://instagram.com/" target="_blank">
                 <span class="sr-only">Instagram</span>
-                <svg aria-hidden="true" class="social" viewBox="0 0 24 24">
+                <svg aria-hidden="true" class="w-6 h-6 text-slate-500 hover:text-red-500 ml-0" viewBox="0 0 24 24">
                   <g
                     fill="none"
                     stroke="currentColor"
@@ -281,18 +281,20 @@
             </div>
           </div>
 
-          <div><img class="head-pic" src="./images/top.webp" alt=""></div>
+          <div class="head-pic-wrap">
+            <img class="head-pic" src="./images/top.webp" alt="top-image">
+          </div>
         </div>
       </section>
 
       <!--================= equipment ================-->
 
       <section class="brands">
-        <img class="brands-1" src="./images/scout.svg" alt="">
-        <img class="brands-1" src="./images/cos.svg" alt="">
-        <img class="brands-1" src="./images/netflix.svg" alt="">
-        <img class="brands-1" src="./images/enigma.svg" alt="">
-        <img class="brands-1" src="./images/expel.svg" alt="">
+        <img class="brands-1" src="./images/scout.svg" alt="brand-pic">
+        <img class="brands-1" src="./images/cos.svg" alt="brand-pic">
+        <img class="brands-1" src="./images/netflix.svg" alt="brand-pic">
+        <img class="brands-1" src="./images/enigma.svg" alt="brand-pic">
+        <img class="brands-1" src="./images/expel.svg" alt="brand-pic">
       </section>
 
       <!--================= about ================-->
@@ -302,7 +304,7 @@
           <img
             class="hidden lg:block h-[80%] self-center object-cover"
             src="./images/app_1.webp"
-            alt=""
+            alt="about-image"
           >
 
           <div class="about-txt">
@@ -379,7 +381,7 @@
           <img
             class="hidden lg:block h-[80%] self-center object-cover"
             src="./images/app_2.webp"
-            alt=""
+            alt="about-image"
           >
         </div>
       </section>
@@ -706,10 +708,10 @@
           <p>Links</p>
 
           <ul>
-            <li><a href="#top">home</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#service">services</a></li>
-            <li><a href="#news">news</a></li>
+            <li><a class="footer__link" href="#top">home</a></li>
+            <li><a class="footer__link" href="#about">about</a></li>
+            <li><a class="footer__link" href="#service">services</a></li>
+            <li><a class="footer__link" href="#news">news</a></li>
           </ul>
         </div>
 

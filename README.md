@@ -1,4 +1,4 @@
-<img src="preview/snoo_2.webp" width="100%">   
+<img src="preview/snoo_1.webp" width="100%"><img src="preview/snoo_2.webp" width="50%"><img src="preview/snoo_3.webp" width="50%">   
 
 <img src="https://img.shields.io/badge/Snoo-7678ed?style=for-the-badge" width="40%" alt="Snoo">
 
